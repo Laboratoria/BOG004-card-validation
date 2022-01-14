@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.banner{
+    background-color: #f2f2f2;
+    height: 82px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.banner_img{
+    position: absolute;
+    height: 100%;
+    width: 1000px;
+}
