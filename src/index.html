@@ -4,11 +4,114 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4de09098c3.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <div class="container">
+      <header>
+          <!-- Banner-Tienda -->
+          <figure class="banner">
+            <img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642198005/banner2_uhetlx.jpg" alt="Dibujo de mascotas">
+          </figure>
+
+          <!-- Menu (modificar la dimensiones del logo petshop)-->
+          <figure>
+            <img class="logo" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642198573/petshop_zuqcgl.jpg" src="#" alt="Logotipo de Pet Shop">
+          </figure>
+          <nav>
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Productos</a></li>
+              <li><a href="#">¿Quienes Somos</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </nav>
+
+      </header>
+      
+      <!-- Section cards productos (Meterlo en JS en un template)-->
+      <main>
+        <!-- card producto 1 -->
+        <div class="cards">
+          <figure>
+            <img src="cloudinary" alt="imagen del producto">
+          </figure>
+          <div class="description">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ipsam accusamus beatae ad corporis quasi eaque aperiam corrupti nihil voluptas voluptatem dicta sit, 
+              explicabo quaerat soluta natus enim quae id.</p>
+            <p>$0000</p>
+          </div>
+          <button id="btn1" disabled>Agotado</button>
+        </div>
+
+        <!-- card producto 2 -->
+        <div class="cards">
+          <figure>
+            <img src="cloudinary" alt="imagen del producto">
+          </figure>
+          <div class="description">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ipsam accusamus beatae ad corporis quasi eaque aperiam corrupti nihil voluptas voluptatem dicta sit, 
+              explicabo quaerat soluta natus enim quae id.</p>
+            <p>$0000</p>
+          </div>
+          <button id="btn2">Comprar</button>
+        </div>
+
+        <!-- card producto 3 -->
+        <div class="cards">
+          <figure>
+            <img src="cloudinary" alt="imagen del producto">
+          </figure>
+          <div class="description">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, ipsam accusamus beatae ad corporis quasi eaque aperiam corrupti nihil voluptas voluptatem dicta sit, 
+              explicabo quaerat soluta natus enim quae id.</p>
+            <p>$0000</p>
+          </div>
+          <button id="btn3" disabled>Agotado</button>
+        </div>
+      </main>
+      
+      <!-- Template para Js -->
+      <div>
+        <section>
+          <p id="template"></p>
+        </section>
+      </div>
+
+
+
+
+
+<!--  Crear formulario-->
+<form id="formulario">
+  <label><input type="text" id="accountCard" placeholder="Ingresa tu nombre"></label>
+  <label><input type="text" id="numberCard" placeholder="Ingresa los digitos de la tarjeta"></label>
+  <label><input type="text" id="CVV" placeholder="Ingresa CVV"></label>
+  <label><input type="date" id="dateExpire"></label>
+</form>
+
+
+
+
+      <footer>
+        <figure>
+          <img src="" alt="logotipo de Pet Shop">
+        </figure>
+
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> </a></li>
+          
+        </ul>
+        <a href="#" target="_blank" rel="noopener noreferrer">mailto:mascotas@email.com</a>
+      </footer>
+    </div>
     <script src="index.js" type="module"></script>
   </body>
 </html>
