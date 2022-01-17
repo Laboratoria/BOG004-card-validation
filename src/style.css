@@ -4,8 +4,68 @@
     box-sizing: border-box;
 }
 
+:root{
+  --menu: #83d7e0c5;
+  --btn:   #009DAE;
+  --hover_btn: #007785;
+}
+
 body{
     font-family: 'Open Sans', sans-serif;
+}
+h2{
+    font-size: 18px;
+    color: black;
+    font-weight: 800;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+.container{
+    width: 80vw;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
+
+/* menu styles */
+
+.container_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--menu);
+}
+
+.container_menu img{
+    width: 120px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.menu li{
+    list-style: none;
+    display: inline;
+    margin: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 2px 12px -2px rgba(128, 128, 128, 0.75);
+    -moz-box-shadow: 0px 2px 12px -2px rgba(128, 128, 128, 0.75);
+    box-shadow: 0px 2px 12px -2px rgba(128, 128, 128, 0.75);
+
+}
+
+.menu li a:hover{
+    background-color:#18a4b4;
+    color: white;
 }
 
 .banner{
@@ -16,10 +76,260 @@ body{
     justify-content: center;
     align-items: center;
     padding: 20px;
+    z-index: 2;
 }
 
 .banner_img{
     position: absolute;
     height: 100%;
     width: 1000px;
+}
+
+
+/* main */
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+
+}
+main .cards{
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards img{
+    width: 180px;
+    height: 180px;
+}
+
+
+.cards p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.cards button{
+    background-color: var(--btn);
+    color: white;
+    border-style: none;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.cards .btn_2:hover{
+    background-color: var(--hover_btn);
+    color: white;
+}
+
+.precio{
+    color: #009DAE;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+p.precio_titulo{
+  color: black;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+
+/* Form */
+.container_form{
+  max-width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+  
+}
+.container_form .cards{
+  width: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_form img{
+  width: 200px;
+  height: 200px;
+}
+
+form label{
+  margin: 10px;
+}
+/* #formulario{
+  padding: 100px;
+  -webkit-box-shadow: 7px -9px 23px -1px rgba(72,75,77,0.75);
+  -moz-box-shadow: 7px -9px 23px -1px rgba(72,75,77,0.75);
+  box-shadow: 7px -9px 23px -1px rgba(72,75,77,0.75);
+  cursor: pointer;
+} */
+
+.pagar{
+  background-color: var(--btn);
+  color: white;
+  border-style: none;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
+  cursor: pointer;
+  margin-top: 20px;
+  
+}
+
+.pagar:hover{
+  background-color: var(--hover_btn);
+}
+
+
+
+.creditCard{
+  padding: 50px;
+  background-image: url("https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642442817/credi-card_oh6ezf.png");
+  background-repeat: no-repeat;
+  background-size: 30vw;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+}
+.creditCard label{
+  margin-top: 20px;
+}
+.creditCard input{
+  margin-top:  100px;
+}
+input.number{
+  width: 20vw;
+  padding: 5px;
+  border: none;
+  background: transparent;
+}
+
+input.name{
+  margin-top: 0px;
+  padding: 2px;
+  margin-bottom: 10px;
+  margin-right: 100px;
+  border: none;
+  background: transparent;
+}
+
+
+.formulario input{
+  width:80%;
+  border-radius: 10px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-left: 40px;
+
+}
+
+.formulario .pagar{
+  width: 80%;
+  margin-left: 40px;
+}
+
+
+/* footer*/
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(209, 208, 208);
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul li{
+padding: 15px;
+font-size: 30px;
+}
+
+.mail{
+  font-size: 20px;
+}
+
+i{
+  background-color: honeydew;
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 2px 12px -2px rgba(31, 31, 31, 0.75);
+  -moz-box-shadow: 0px 2px 12px -2px rgba(31, 31, 31, 0.75);
+  box-shadow: 0px 2px 12px -2px rgba(31, 31, 31, 0.75);
+}
+.fa-facebook{
+  color: #1877f2;
+}
+
+.fa-instagram{
+  color: #e1306c;
+}
+
+.fa-twitter{
+  color: #1da1f2;
+}
+
+.fa-linkedin{
+  color: #0072b1;
+}
+footer ul li{
+  list-style: none;
+}
+
+.container_mail li{
+  list-style: none;
+}
+
+.container_mail a{
+  text-decoration: none;
+  color: black;
+}
+
+.container_mail span{
+  color: var(--hover_btn);
+  font-weight: 700;
+  border-bottom: 1px solid grey;
+}
+footer figure .logoFooter{
+    width: 120px;
+    margin-left: 10px;
+    margin-top: 10px;
 }

@@ -1,5 +1,15 @@
 import validator from './validator.js';
 
+document.getElementById('screen_form').style.display= 'none';
+
+const comprar = document.getElementById('btn_2')
+
+comprar = document.addEventListener('click', ()=>{
+  document.getElementById('screen_form').style.display= 'flex';
+  document.querySelector('.screen_cards').style.display= 'none';
+})
+
+
 function cards(){
     let questions = document.createElement('div');
     questions.innerHTML = `
