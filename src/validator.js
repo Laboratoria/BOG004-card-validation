@@ -1,5 +1,9 @@
-const validator = {
+//const validator = {
   // ...
-};
+//
+  // Obtengo el nombre del input
+  
 
-export default validator;
+
+
+//export default validator;
