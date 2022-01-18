@@ -4,13 +4,139 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4de09098c3.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
+    <div class="container">
+      <header>
+          <!-- Banner-Tienda -->
+          <figure class="banner">
+            <img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642431153/banner_2_yfm5h1.png" alt="Dibujo de mascotas">
+          </figure>
+
+          <!-- Menu (modificar la dimensiones del logo petshop)-->
+          <div class="container_menu">
+            <figure>
+              <img class="logo" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642432139/logopng_raq7he.png" src="#" alt="Logotipo de Pet Shop">
+            </figure>
+            <nav>
+              <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">¿Quienes Somos?</a></li>
+                <li><a href="#">Contacto</a></li>
+              </ul>
+            </nav>
+          </div>
+      </header>
       
-    </header>
-    <main></main>
-    <footer></footer>
+      <!-- Section cards productos (Meterlo en JS en un template)-->
+      <main class="screen_cards">
+        <!-- card producto 1 -->
+        <div class="cards">
+          <figure>
+            <img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642434623/consulta_dqh7vy.jpg" alt="Atencion Medica">
+          </figure>
+          <div class="description">
+            <h2 class="titulo">Atención Médica</h2><br>
+            <p>Chat y videollamada 24/7 de forma ilimitada y consultas a domicilio bajo criterio<br> médico y previo agendamiento.</p>
+            <p class="precio_titulo">Precio:</p>
+            <span class="precio"><b> 60.000 $</b></span>
+          </div>
+          <button id="btn1" disabled>Comprar</button>
+        </div>
+
+        <!-- card producto 2 -->
+        <div class="cards">
+          <figure>
+            <img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642435343/alimentos_x8djx5.jpg" alt="imagen del producto">
+          </figure>
+          <div class="description">
+            <h2 class="titulo">Alimentos</h2><br>
+            <p>Pensando en la alimentación de tus mascotas, acá encuentras gran variedad.</p>
+            <p class="precio_titulo">Precio:</p>
+            <span class="precio"> 40.000 $</span>
+          </div>
+          <button class="btn_2" id="btn2">Comprar</button>
+        </div>
+
+        <!-- card producto 3 -->
+        <div class="cards">
+          <figure>
+            <img class="img" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642435343/accesorios_ehh7ov.jpg" alt="imagen del producto">
+          </figure>
+          <div class="description">
+            <h2 class="titulo">Accesorios y Juguetes</h2><br>
+            <p>Pasar más tiempo con tu mascota los hará<br> muy felices a los dos. Encuentra en Pet Shop <br>una fantástica variedad de juguetes novedosos y divertidos para entretener al consentido de la casa.</p>
+            <p class="precio_titulo">Precio:</p>
+            <span class="precio">10.000$</span>
+          </div>
+          <button id="btn3" disabled>Comprar</button>
+        </div>
+      </main>
+      
+      <!-- Template para Js -->
+      <div>
+        <section>
+          <p id="template"></p>
+        </section>
+      </div>
+
+<!--  Crear formulario-->
+<div class="container_form" id="screen_form">
+  <div class="cards">
+    <figure>
+      <img class="img" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642435343/accesorios_ehh7ov.jpg" alt="imagen del producto">
+    </figure>
+    <div class="description">
+      <h2 class="titulo">Accesorios y Juguetes</h2><br>
+      <p>Pasar más tiempo con tu mascota los hará<br> muy felices a los dos. Encuentra en Pet Shop <br>una fantástica variedad de juguetes novedosos y divertidos para entretener al consentido de la casa.</p>
+      <p class="precio_titulo">Precio:</p>
+      <span class="precio">10.000$</span>
+    </div>
+  </div>
+
+  <!--  Crear formulario para imprimir datos en la tarjeta de crédito-->
+  <div class="container_creditCard">
+    <form class="creditCard " action="">
+      <label><input class="number" type="text" id="numberCard"></label>
+      <label><input class="name" type="text" id="nameCard"></label>
+    </form>
+
+    <!--  Crear formulario para el ingreso de datos-->
+    <form class="formulario" id="formulario">
+      <label><input type="text" id="accountCard" placeholder="Ingresa tu nombre" required></label>
+      <label><input type="text" id="numberCard" placeholder="Ingresa los digitos de la tarjeta" required></label>
+      <label><input type="text" id="CVV" placeholder="Ingresa CVV" required></label>
+      <label><input type="date" id="dateExpire" required></label>
+      <button class="pagar">Pagar</button>
+    </form>
+
+  </div>
+</div>
+
+<!--  footer-->
+      <footer>
+        <figure>
+          <img class="logoFooter" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642432139/logopng_raq7he.png" src="#" alt="Logotipo de Pet Shop">
+        </figure>
+
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> </a></li>
+        </ul>
+        <div class="container_mail">
+          <li><a href="https://mail.google.com" class="mail" target="_blank" rel="noopener noreferrer"><span>Contáctanos</span><br>mailto:mascotas.petshop@email.com</a></li>
+        </div>
+        
+      </footer>
+    </div>
     <script src="index.js" type="module"></script>
   </body>
 </html>
