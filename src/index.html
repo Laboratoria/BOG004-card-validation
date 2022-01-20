@@ -112,9 +112,10 @@
     <!--  Crear formulario para el ingreso de datos-->
     <form class="formulario" id="formulario">
       <label><input type="text" id="accountCard" placeholder="Ingresa tu nombre" required></label>
-      <label><input type="text" id="numberCard" placeholder="Ingresa los digitos de la tarjeta" required></label>
-      <label><input type="text" id="CVV" placeholder="Ingresa CVV" required></label>
-      <label><input type="date" id="dateExpire" required></label>
+      <label><input type="text" id="numberTc" maxlength="19" autocomplete="off" placeholder="Ingresa los digitos de la tarjeta" required></label>
+      <label><input type="text" id="CVV" maxlength="3" autocomplete="off" placeholder="Ingresa CVV" required></label> 
+      <label><input type="text" class="dateExpire" id="monthExpire" placeholder= "Mes" maxlength="2" autocomplete="off" required></label>
+      <label><input type="text" class="dateExpire" id="yearExpire" placeholder="Año" maxlength="2" autocomplete="off" required></label>
       <button class="pagar">Pagar</button>
     </form>
 
