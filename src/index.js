@@ -43,10 +43,29 @@ comprarInactivo.addEventListener('click', ()=>{
         //   // Eliminar las letras
           .replace(/\D/g, '')
         //   // Ponemos espacio cada cuatro numeros
-          .replace(/([0-9]{4})/g, '$1 ')
+          .replace(/([0-9]{4})/g, '$1')
         //   // Elimina el ultimo espaciado
           .trim();
         })
+
+
+//PREGUNTAR SI ACA DEBEMOS CONSTRUIR 
+//EL SPLIT DE LA TARJETA Y REVERSE PARA EXPORTAR LA FUNCION ENTRE ARCHIVOS*****  
+
+// escuche el evento. isvalid(Algoritmo LUHN).retornar un resultado. html DOM Valid o no. MI DUDA
+
+//**SOLUCION POR FANNY**
+
+
+// Guardar (captuar de datos).numbCard del input.
+// Boton addEventListener('EDOM', validator.isValid(cardNumber))
+
+
+
+
+
+
+
 
 // Input select mes
 
@@ -112,13 +131,53 @@ comprarInactivo.addEventListener('click', ()=>{
           // Eliminar las letras
           .replace(/\D/g, '');
         })
-        
-        
 
 
 
-// const btnPagar = document.querySelector('.pagar');
-// btnPagar.addEventListener('click', Message);
+// ********************************************************
+//OPTION2
+const inputNumberTc = document.getElementById('numberTc')
+inputNumberTc.addEventListener('keyup', (e) => {
+  let cardNumber = e.target.value;
+
+  //cardNumber.addEventListener('keyup', function(){
+
+    const isValid = validator.isValid(cardNumber);
+    // if (isValid == true){
+    //   alert('Muchas gracias por su compra con su Tarjeta de Crédito');
+    // }else{
+    //   alert('Tarjeta invlida, por favor verifica nuevamente los datos');
+    // }
+
+  //})
+})
+
+
+
+
+
+
+// // Guardar (captuar de datos).numbCard del input
+// let cardNumber = document.getElementById('numberTc').value;
+
+// let btn = document.getElementById('pagar')
+//     btn.addEventListener('click', validator.isValid(cardNumber))
+// // let cardNumber = form.numberTc.value;
+// let btn = document.getElementById('pagar')
+// document.addEventListener('click', validator.isValid(cardNumber));
+
+
+// let cardNumber = form.numberTc.value;
+// cardNumber.addEventListener('click', validator.isValid(cardNumber));
+// console.log(cardNumber)
+
+
+
+//*************************************
+//
+
+
+
 // function Message(){
 //     alert('Muchas gracias por su compra con su Tarjeta de Crédito'); //CONCATENAR AL MENSAJE LOS ULTIMOS 4 DIGITOS CIFRADOS DE TDC.
 // }
@@ -127,5 +186,5 @@ comprarInactivo.addEventListener('click', ()=>{
 
 
 
-//YA LO TRAE EL ARCHIVO.
+
 console.log(validator);
