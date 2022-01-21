@@ -2,13 +2,35 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name= content="width=device-width">
+    <title> Tarjeta de Credito </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+  <body>   
+    <div id="inicia">
+    <h1>Pasteleria</h1>
+<p>Disfruta de los mejores postres, bolleria y pasteles</p>
+
+<!-- opcion 1 de membresia--> 
+
+<h2>Pasteles chilenos y colombianos MEMBRESIA 1 MES</h2>
+ <button id="btn10"> 10 $ </button> 
+
+
+<h2>Pasteles chilenos y colombianos MEBRESIA 3 MESES</h2>
+ <button id="btn25" class="estiloBoton"> 25 $ </button> 
+    </div>
+
+<!--VALIDACIÓN DE TARJETA DE CREDITO-->
+    <div id="validación" class="ocultar">
+<h1>Felicitaciones</h1>
+<p>Ingresa los datos de la tarjeta de Credito para adquirir tu membresia</p>
+
+<input type="number" maxlength="16" minlength="13" id="numerosIngresados"> 
+
+<input type="submit" value="VALIDAR" id= "btnValidar">
+
+</div>
+    <script src="index.js"></script>
   </body>
 </html>
