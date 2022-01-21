@@ -1,0 +1,19 @@
+
+body{
+    background-color: rgb(128, 155, 204);
+}
+
+h1{
+    text-align: center;
+}
+
+.images{
+  padding: 150px;
+  width: 150px;
+  display: inline;
+
+}
+
+.pag2{
+display: none;
+}
