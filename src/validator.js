@@ -16,19 +16,22 @@ const validator = {
       }
 
     }
-    //return console.log(numPair + numOdd) % 10 === 0;
+    return (numPair + numOdd) % 10 === 0;
 
   },
 
 
 maskify: (cardNumber) => {
+  let response=""
     if (cardNumber.length > 4) {
-      let result = cardNumber.lengt - 4;
+      let result = cardNumber.length - 4;
       console.log("#".repeat(result) + cardNumber.substr(-4));
-      return "#".repeat(result) + cardNumber.substr(-4);
-
+     response=  "#".repeat(result) + cardNumber.substr(-4);
+      
     }
-  },
+    console.log(response)
+    return response ;
+  }
   
 }
 export default validator;

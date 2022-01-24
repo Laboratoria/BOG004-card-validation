@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="pag1" class= "pag1" >
-   <center>
+    <body background="imagenes.img/fondo.jpg">
+    <div id="pag1" class= "pag1">
+      <center>
      <img src="imagenes.img/descarga.jfif" width="300" height="120"> </center>
-      <br>
-      <span style="font-size: 40px; margin: 21px 0;">BIENVENIDOS</span>
-      </br>
+      
+      <h1 font-size: 250% class="title" style="font-size:38px"> BIENVENIDOS </h1>
+      
       <h1>PET SHOP</h1>
        <div id="images" class="images"> 
        <img src="imagenes.img/img1.jpg" width="150" height="150">
@@ -26,17 +27,34 @@
       
        
       <div id="pag2" class= "pag2"> 
+        <img src="imagenes.img/diferencia-tarjeta-credito-debito.png" alt="">
         <form> 
+          <div>
          <input type="text" name="name" id="name" placeholder="NOMBRE"> 
-         <input type="number" name="numbertc" id="cardNumber" placeholder="DIGITA EL NUMERO DE TU TARJETA DE CREDITO">
-         <button id="btn-ntc" type="button" >Validar</button>  
-       
-        </form>              
+        </div>
+        <br>
+        <div>
+         <input type="number" name="numbertc" id="cardNumber" placeholder="DIGITA EL NUMERO DE TU TARJETA" maxlength="16">
+        </br>
+        <br>
+         <button id="btn-ntc" class="last" type="submit" >Validar</button>  </br>
+        </div>
+        </form>
+        <p> </p>
+          <footer></footer>
+        </div>
+      </div>
+              
+        
      </div>  
+
+     
      
 
-    
-    <footer></footer>
+
+
+      
+
     <script src="index.js" type="module"></script>
    
   </body>
