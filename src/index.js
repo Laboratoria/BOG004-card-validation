@@ -46,13 +46,32 @@ comprarInactivo.addEventListener('click', ()=>{
           .replace(/([0-9]{4})/g, '$1')
         //   // Elimina el ultimo espaciado
           .trim();
+
+          
+
+          const numberCard = document.getElementById('numberCard');
+
+          numberCard.value = input
+
+
+
+          // //   numberCard.textContent = validator.maskify(input);
+          // // }
+
+      //document.getElementById('numberCard').value = input
+      
+          // const inputCc = document.getElementById('numberCard')
+          // inputCc.addEventListener('keyup', (e) => {
+          // let numberCard = e.target.value;
+
+          
         })
 
 
-//PREGUNTAR SI ACA DEBEMOS CONSTRUIR 
-//EL SPLIT DE LA TARJETA Y REVERSE PARA EXPORTAR LA FUNCION ENTRE ARCHIVOS*****  
 
-// escuche el evento. isvalid(Algoritmo LUHN).retornar un resultado. html DOM Valid o no. MI DUDA
+
+
+
 
 //**SOLUCION POR FANNY**
 
@@ -62,25 +81,21 @@ comprarInactivo.addEventListener('click', ()=>{
 
 
 
-
-
-
-
-
 // Input select mes
 
-        form.monthExpire.addEventListener('keyup',(e)=>{
 
-          monthExpire.textContent = e.target.value;
-        })
+        // form.monthExpire.addEventListener('keyup',(e)=>{
+
+        //   monthExpire.textContent = e.target.value;
+        // })
 
 
 // Input select año
 
-        form.yearExpire.addEventListener('keyup',(e)=>{
+//         form.yearExpire.addEventListener('keyup',(e)=>{
 
-        yearExpire.textContent = e.target.value.slice(2);
-})
+//         yearExpire.textContent = e.target.value.slice(2);
+// })
 
 
 
@@ -117,6 +132,8 @@ comprarInactivo.addEventListener('click', ()=>{
 
           form.accountCard.value = input.replace(/[0-9]/g, '');
 
+          document.getElementById('nameCard').value = input
+
         })
 
 // * Input CVV
@@ -139,18 +156,42 @@ comprarInactivo.addEventListener('click', ()=>{
 const inputNumberTc = document.getElementById('numberTc')
 inputNumberTc.addEventListener('keyup', (e) => {
   let cardNumber = e.target.value;
+  // isvalid
+  const isValid = validator.isValid(cardNumber);
 
-  //cardNumber.addEventListener('keyup', function(){
+  const btnPagar = document.getElementById('pagar');
+  btnPagar.addEventListener('click' , ()=>{
+    if(isValid == cardNumber){
+      console.log('Gracias por su compra')
+    }
+  })
 
-    const isValid = validator.isValid(cardNumber);
-    // if (isValid == true){
-    //   alert('Muchas gracias por su compra con su Tarjeta de Crédito');
-    // }else{
-    //   alert('Tarjeta invlida, por favor verifica nuevamente los datos');
-    // }
+  
+// maskify
+  const maskify = validator.maskify(cardNumber)
+  document.getElementById('numberCard').innerHTML = maskify
 
-  //})
+  
 })
+
+//*******SECCION ENMASCARAMIENTO*********/
+// numberCard.textContent = validator.maskify(cardNumber);
+
+// document.getElementById('numberCard').value = form
+
+// const cardNumber = document.getElementById('numberTc');
+
+// document.getElementById('numberCard').textContent = validator.maskify(cardNumber.value)
+
+// numberCard.addEventListener('keyup', (e)=>{
+// let numberMaskify = e.numberCard.value;
+// numberMaskify = value.replace(/\D/g, '')
+
+
+
+// })
+
+
 
 
 
@@ -162,7 +203,7 @@ inputNumberTc.addEventListener('keyup', (e) => {
 
 // let btn = document.getElementById('pagar')
 //     btn.addEventListener('click', validator.isValid(cardNumber))
-// // let cardNumber = form.numberTc.value;
+// let cardNumber = form.numberTc.value;
 // let btn = document.getElementById('pagar')
 // document.addEventListener('click', validator.isValid(cardNumber));
 
@@ -175,6 +216,9 @@ inputNumberTc.addEventListener('keyup', (e) => {
 
 //*************************************
 //
+
+
+
 
 
 
