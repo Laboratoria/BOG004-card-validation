@@ -25,11 +25,11 @@ maskify: (cardNumber) => {
   let response=""
     if (cardNumber.length > 4) {
       let result = cardNumber.length - 4;
-      console.log("#".repeat(result) + cardNumber.substr(-4));
+      //console.log("#".repeat(result) + cardNumber.substr(-4));
      response=  "#".repeat(result) + cardNumber.substr(-4);
       
     }
-    console.log(response)
+    //console.log(response)
     return response ;
   }
   

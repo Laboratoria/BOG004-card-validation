@@ -21,21 +21,13 @@ form.addEventListener('submit', e => {
     alert('Por favor ingresa tu nombre y tu número de Tarjeta de Crédito');
     e.preventDefault();
   }
- 
-})
-
-let btnntc = document.getElementById("btn-ntc");   //Mostrar mensaje de tarjeta valida o invalida
-//let numbertc = document.getElementById("cardNumber");
-btnntc.addEventListener('click', () => {
-  if (validator.isValid(cardNumber.value)) {
+  else if(validator.isValid(cardNumber.value)) {
     alert("tu tarjeta terminada en " + validator.maskify(cardNumber.value) + " es Valida");
   } else {
     alert("tu tarjeta terminada en " + validator.maskify(cardNumber.value) + " es Invalida")
   }
 
-
-  console.log(validator.isValid(cardNumber.value));
-  
-  return;
 })
+
+
 
