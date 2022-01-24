@@ -58,9 +58,12 @@ let sumaTotal = []
 let sumaDefinitiva = sumaTotal.push(revertirNum);
 console.log(sumaTotal)
 
-const sumaFinal = sumaDefinitiva;
-const reducer = sumaDefinitiva ((accumulator, curr) => accumulator + curr);
+//const sumaFinal = sumaDefinitiva;
+const reducer = revertirNum.reduce( (accumulator, curr) => accumulator + curr, 0);//no sabemos cómo hacer que sume, con - da el resultado en negativo.
 console.log(reducer);
+const reducir = revertirNum.reduce( (accumulator, curr) => accumulator + curr, 0);
+console.log(reducir)
+
   }
   
 
