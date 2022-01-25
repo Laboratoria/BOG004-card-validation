@@ -59,12 +59,24 @@ let sumaDefinitiva = sumaTotal.push(revertirNum);
 console.log(sumaTotal)
 
 //const sumaFinal = sumaDefinitiva;
-const reducer = revertirNum.reduce( (accumulator, curr) => accumulator + curr, 0);//no sabemos cómo hacer que sume, con - da el resultado en negativo.
+const reducer = revertirNum.reduce( (accumulator, curr) => accumulator + +curr, 0);//no sabemos cómo hacer que sume, con - da el resultado en negativo.
 console.log(reducer);
-const reducir = revertirNum.reduce( (accumulator, curr) => accumulator + curr, 0);
-console.log(reducir)
+console.log(reducer % 10);
 
-  }
+valReducer= reducer;
+
+//nos arroja alert si es válida o inválida, pero no nos imprime en la consola si es boolean o number.
+
+let parametro = (valReducer % 10 == 0);
+if(parametro == false) {
+  alert("Tarjeta válida")}
+else {
+  alert("Tarjeta inválida")
+//console.log(valReducer);
+}
+
+
+  
   
 
 
@@ -74,7 +86,7 @@ console.log(reducir)
 
 
 
-
+ }
   const botonValidar=document.getElementById("btnValidar");
   botonValidar.addEventListener("click",obtenerNumero);
- 
+
