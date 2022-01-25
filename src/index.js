@@ -33,7 +33,7 @@ comprarInactivo.addEventListener('click', ()=>{
         const form = document.querySelector('#formulario')
 
         form.numberTc.addEventListener('keyup', (e)=>{
-
+          
           let input = e.target.value;
 
           form.numberTc.value = input
@@ -47,81 +47,18 @@ comprarInactivo.addEventListener('click', ()=>{
         //   // Elimina el ultimo espaciado
           .trim();
 
+// Reflejar de un input a otro la información y Obtener el valor del credit card input 
+// con el atributo value
           
-
+          // var numberTcValue = numberTc.value;
+          var numberTcValue = document.getElementById('numberTc').value
+          // console.log(numberTcValue)
           const numberCard = document.getElementById('numberCard');
+          const numerMask = validator.maskify(numberTcValue);
+          numberCard.value = numerMask
+          numberCard.placeholder = numerMask
 
-          numberCard.value = input
-
-
-
-          // //   numberCard.textContent = validator.maskify(input);
-          // // }
-
-      //document.getElementById('numberCard').value = input
-      
-          // const inputCc = document.getElementById('numberCard')
-          // inputCc.addEventListener('keyup', (e) => {
-          // let numberCard = e.target.value;
-
-          
-        })
-
-
-
-
-
-
-
-//**SOLUCION POR FANNY**
-
-
-// Guardar (captuar de datos).numbCard del input.
-// Boton addEventListener('EDOM', validator.isValid(cardNumber))
-
-
-
-// Input select mes
-
-
-        // form.monthExpire.addEventListener('keyup',(e)=>{
-
-        //   monthExpire.textContent = e.target.value;
-        // })
-
-
-// Input select año
-
-//         form.yearExpire.addEventListener('keyup',(e)=>{
-
-//         yearExpire.textContent = e.target.value.slice(2);
-// })
-
-
-
-
-
-
-          // ******* to do ***** SECCION DEL LOGO
-        // numberTC.textContent = input;
-
-        // if(input == ''){
-        //   numberTC.textContent = '#### #### #### ####';
-      
-        //   logoMarca.innerHTML = '';
-        // }
-        // if(input[0] == 4){
-        //   logoMark.innerHTML = '';
-        //   const imagen = document.createElement('img');
-        //   imagen.src = 'visa.png';
-        //   logoMark.appendChild(imagen);
-        // } else if(input[0] == 5){
-        //   logoMark.innerHTML = '';
-        //   const imagen = document.createElement('img');
-        //   imagen.src = 'mastercard.png';
-        //   logoMarca.appendChild(imagen);
-        // }
-
+    })
 
 
 // * Input nombre
@@ -152,82 +89,24 @@ comprarInactivo.addEventListener('click', ()=>{
 
 
 // ********************************************************
-//OPTION2
+//Escuchador Ingreso número tarjeta
 const inputNumberTc = document.getElementById('numberTc')
 inputNumberTc.addEventListener('keyup', (e) => {
   let cardNumber = e.target.value;
-  // isvalid
-  const isValid = validator.isValid(cardNumber);
+
+  // btn Pagar
 
   const btnPagar = document.getElementById('pagar');
-  btnPagar.addEventListener('click' , ()=>{
-    if(isValid == cardNumber){
-      console.log('Gracias por su compra')
+  btnPagar.addEventListener('click', ()=>{
+    console.log(validator.isValid(cardNumber))
+    if(validator.isValid(cardNumber)){
+      alert('Pago satisfactorio')
+    }else{
+      alert('Lo siento su tarjeta es inválida')
     }
   })
 
-  
-// maskify
-  const maskify = validator.maskify(cardNumber)
-  document.getElementById('numberCard').innerHTML = maskify
-
-  
 })
-
-//*******SECCION ENMASCARAMIENTO*********/
-// numberCard.textContent = validator.maskify(cardNumber);
-
-// document.getElementById('numberCard').value = form
-
-// const cardNumber = document.getElementById('numberTc');
-
-// document.getElementById('numberCard').textContent = validator.maskify(cardNumber.value)
-
-// numberCard.addEventListener('keyup', (e)=>{
-// let numberMaskify = e.numberCard.value;
-// numberMaskify = value.replace(/\D/g, '')
-
-
-
-// })
-
-
-
-
-
-
-
-
-// // Guardar (captuar de datos).numbCard del input
-// let cardNumber = document.getElementById('numberTc').value;
-
-// let btn = document.getElementById('pagar')
-//     btn.addEventListener('click', validator.isValid(cardNumber))
-// let cardNumber = form.numberTc.value;
-// let btn = document.getElementById('pagar')
-// document.addEventListener('click', validator.isValid(cardNumber));
-
-
-// let cardNumber = form.numberTc.value;
-// cardNumber.addEventListener('click', validator.isValid(cardNumber));
-// console.log(cardNumber)
-
-
-
-//*************************************
-//
-
-
-
-
-
-
-// function Message(){
-//     alert('Muchas gracias por su compra con su Tarjeta de Crédito'); //CONCATENAR AL MENSAJE LOS ULTIMOS 4 DIGITOS CIFRADOS DE TDC.
-// }
-
-
-
 
 
 
