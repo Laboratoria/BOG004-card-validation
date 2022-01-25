@@ -4,7 +4,7 @@ const validator = {
     let numOdd = 0;
     cardNumber = cardNumber.split("").reverse();
     for (let i = 0; i < cardNumber.length; i++) {
-      if (i % 2 === 1) {        //verificamos si la posicion es par 
+      if (i % 2 === 1) {  //verificamos si la posicion es par 
         if (cardNumber[i] * 2 >= 10) {
           numPair += ((cardNumber[i] * 2) - 9);
         } else {
@@ -21,18 +21,21 @@ const validator = {
   },
 
 
-maskify: (cardNumber) => {
-  let response=""
+  maskify: (cardNumber) => {
+    let response = ""
     if (cardNumber.length > 4) {
       let result = cardNumber.length - 4;
       //console.log("#".repeat(result) + cardNumber.substr(-4));
-     response=  "#".repeat(result) + cardNumber.substr(-4);
-      
+      response = "#".repeat(result) + cardNumber.substr(-4);
+    }
+    else {
+     console.log(cardNumber) 
+     return cardNumber;
     }
     //console.log(response)
-    return response ;
+    return response;
   }
-  
+
 }
 export default validator;
 

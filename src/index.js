@@ -21,7 +21,7 @@ form.addEventListener('submit', e => {
     alert('Por favor ingresa tu nombre y tu número de Tarjeta de Crédito');
     e.preventDefault();
   }
-  else if(validator.isValid(cardNumber.value)) {
+  else if (validator.isValid(cardNumber.value)) {
     alert("tu tarjeta terminada en " + validator.maskify(cardNumber.value) + " es Valida");
   } else {
     alert("tu tarjeta terminada en " + validator.maskify(cardNumber.value) + " es Invalida")
