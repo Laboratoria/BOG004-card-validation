@@ -4,9 +4,9 @@ document.getElementById('screen_form').style.display= 'none';
 
 // funtion print user name
 
-let name = prompt('Hola bienvenida a Pet Shop, nos encantará conocer tú nombre')
+// let name = prompt('Hola bienvenida a Pet Shop, nos encantará conocer tú nombre')
 
-document.getElementById('saludo').innerHTML = `Hola 👋 ${name} Bienvenida a Pet Shop la mejor tienda para tú mascota 🐾`
+// document.getElementById('saludo').innerHTML = `Hola 👋 ${name} Bienvenida a Pet Shop la mejor tienda para tú mascota 🐾`
 
 
 //Seccion ocultar pantalla
