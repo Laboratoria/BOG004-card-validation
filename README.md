@@ -16,7 +16,8 @@
 
 ## 1. Titulo del Proyecto: 
 
-PetShop.            
+PetShop.
+<img class="logo" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642432139/logopng_raq7he.png" alt="Logotipo de Pet Shop">
 
 ## 2. Resumen del proyecto
 
