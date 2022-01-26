@@ -44,7 +44,7 @@ El principal objetivo es que el cliente o usuario pueda encontrar de primera man
 
 ## 5. Prototipo en papel.
 
-![](hhttps://res.cloudinary.com/dtaq1ip2g/image/upload/v1643217948/PROTOTIPO_PAPEL_p35lbx.png)
+![](https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643217948/PROTOTIPO_PAPEL_p35lbx.png)
 ![](https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643217948/PROTOTIPO_PAPEL_LADO_1_rsyfh8.png)
 
 
