@@ -17,7 +17,7 @@
 ## 1. Titulo del Proyecto: 
 
 PetShop.
-<img class="logo" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642432139/logopng_raq7he.png" alt="Logotipo de Pet Shop" width = "100px" height ="100px">
+<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642432139/logopng_raq7he.png" alt="Logotipo de Pet Shop" width = "200px" height ="200px">
 
 ## 2. Resumen del proyecto
 
@@ -37,18 +37,16 @@ b.-¿Cómo el producto soluciona los problemas/necesidades de dichos usuarios?
 El principal objetivo es que el cliente o usuario pueda encontrar de primera mano los diversos servicios de manera rápida como son Atención Medica Veterinaria 24/7 para los casos de emergencia u otros productos realizando el pago a través de mecanismos digitales como Tarjeta de Crédito.
 
 ## Proyecto Final
-<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218138/PROTOTIPO_FINAL_1_ihuofa.png
-" alt="Pantalla index" width = "100px" height ="100px">
-<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218138/PROTOTIPO_FINAL_2_mg6ag8.png
-" alt="Pantalla Formulario" width = "100px" height ="100px">
+
+![](https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218138/PROTOTIPO_FINAL_1_ihuofa.png)
+![](https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218138/PROTOTIPO_FINAL_2_mg6ag8.png)
 
 
 ## 5. Prototipo en papel.
 
-<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643217948/PROTOTIPO_PAPEL_p35lbx.png
-" alt="Prototipo Papel" width = "100px" height ="100px">
-<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643217948/PROTOTIPO_PAPEL_LADO_1_rsyfh8.png
-" alt="Prototipo Papel" width = "100px" height ="100px">
+![](hhttps://res.cloudinary.com/dtaq1ip2g/image/upload/v1643217948/PROTOTIPO_PAPEL_p35lbx.png)
+![](https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643217948/PROTOTIPO_PAPEL_LADO_1_rsyfh8.png)
+
 
 ## 6. Feedback
 
@@ -56,14 +54,10 @@ El principal objetivo es que el cliente o usuario pueda encontrar de primera man
 
 ## 7. Prototipo en Figma
 
-Prototipo en figma.
 
-<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218340/PROTOTIPO_FIGMA_1_gsnwr0.png
-" alt="" width = "100px" height ="100px">
-<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218340/PROTOTIPO_FIGMA_2_zgrpuu.png
-" alt="" width = "100px" height ="100px">
-<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218340/PROTOTIPO_FIGMA_3_ezqppk.png
-" alt="" width = "100px" height ="100px">
+![](https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218340/PROTOTIPO_FIGMA_1_gsnwr0.png)
+![](https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218340/PROTOTIPO_FIGMA_2_zgrpuu.png)
+![](https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218340/PROTOTIPO_FIGMA_3_ezqppk.png)
 
 
 ## RESULTADOS DE LAS PRUEBAS.
@@ -77,10 +71,8 @@ Tus pruebas unitarias deben dar un 70% en _coverage_ (cobertura),
 _statements_ (sentencias), _functions_ (funciones) y _lines_ (líneas); y un
 mínimo del 50% de _branches_ (ramas).
 
-<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218237/TEST_1_g2ysdo.png
-" alt="Unit Tests" width = "100px" height ="100px">
-<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218237/TEST_2_ubroil.png
-" alt="Unit Test" width = "100px" height ="100px">
+![](https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218237/TEST_1_g2ysdo.png)
+![](https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218237/TEST_2_ubroil.png)
 
 
 
