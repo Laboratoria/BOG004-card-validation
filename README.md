@@ -17,7 +17,7 @@
 ## 1. Titulo del Proyecto: 
 
 PetShop.
-<img class="logo" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642432139/logopng_raq7he.png" alt="Logotipo de Pet Shop">
+<img class="logo" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642432139/logopng_raq7he.png" alt="Logotipo de Pet Shop" width = "100px" height ="100px">
 
 ## 2. Resumen del proyecto
 
@@ -33,18 +33,22 @@ a.- ¿Quiénes son los usuarios y los objetivos en relación con el producto?
 Los principales usuarios de PetShop son médicos veterinarios y propietarios de mascotas que desean adquirir productos y/o servicios veterinarios. 
 
 b.-¿Cómo el producto soluciona los problemas/necesidades de dichos usuarios?
-, el uso de una
+
 El principal objetivo es que el cliente o usuario pueda encontrar de primera mano los diversos servicios de manera rápida como son Atención Medica Veterinaria 24/7 para los casos de emergencia u otros productos realizando el pago a través de mecanismos digitales como Tarjeta de Crédito.
 
-https://files.slack.com/files-pri/T0NNB6T0R-F0308F70F7E/image.png
-https://files.slack.com/files-pri/T0NNB6T0R-F02V5HEKHGX/image.png
+## Proyecto Final
+<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218138/PROTOTIPO_FINAL_1_ihuofa.png
+" alt="Pantalla index" width = "100px" height ="100px">
+<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218138/PROTOTIPO_FINAL_2_mg6ag8.png
+" alt="Pantalla Formulario" width = "100px" height ="100px">
 
-partir de la ideaplastamada en papel cuales se cubre con ltodos los campos diseñado y mensaj defi
 
 ## 5. Prototipo en papel.
 
-https://files.slack.com/files-pri/T0NNB6T0R-F030K3ALGP3/image.png
-https://files.slack.com/files-pri/T0NNB6T0R-F0306EX1UTV/image.png
+<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643217948/PROTOTIPO_PAPEL_p35lbx.png
+" alt="Prototipo Papel" width = "100px" height ="100px">
+<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643217948/PROTOTIPO_PAPEL_LADO_1_rsyfh8.png
+" alt="Prototipo Papel" width = "100px" height ="100px">
 
 ## 6. Feedback
 
@@ -52,12 +56,15 @@ https://files.slack.com/files-pri/T0NNB6T0R-F0306EX1UTV/image.png
 
 ## 7. Prototipo en Figma
 
-prototipo en figma
-https://files.slack.com/files-pri/T0NNB6T0R-F030VU37ZQ8/image.png
-https://files.slack.com/files-pri/T0NNB6T0R-F0308FMJ9PE/image.png
-https://files.slack.com/files-pri/T0NNB6T0R-F030JRPF0DP/image.png
+Prototipo en figma.
 
-indicamos qué harás en cada archivo:
+<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218340/PROTOTIPO_FIGMA_1_gsnwr0.png
+" alt="" width = "100px" height ="100px">
+<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218340/PROTOTIPO_FIGMA_2_zgrpuu.png
+" alt="" width = "100px" height ="100px">
+<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218340/PROTOTIPO_FIGMA_3_ezqppk.png
+" alt="" width = "100px" height ="100px">
+
 
 ## RESULTADOS DE LAS PRUEBAS.
     
@@ -70,8 +77,11 @@ Tus pruebas unitarias deben dar un 70% en _coverage_ (cobertura),
 _statements_ (sentencias), _functions_ (funciones) y _lines_ (líneas); y un
 mínimo del 50% de _branches_ (ramas).
 
+<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218237/TEST_1_g2ysdo.png
+" alt="Unit Tests" width = "100px" height ="100px">
+<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643218237/TEST_2_ubroil.png
+" alt="Unit Test" width = "100px" height ="100px">
 
-https://files.slack.com/files-pri/T0NNB6T0R-F03064K6DL2/image.png
-https://files.slack.com/files-pri/T0NNB6T0R-F0308DNDRNG/image.png
+
 
 Proyecto desarrollado en dupla en colaboración entre Nathaly Huerta y Lina Marcela Villa.* [Blog: cómo funciona el algoritmo de Luhn](http://www.quobit.mx/asi-funciona-el-algoritmo-de-luhn-para-generar-numeros-de-tarjetas-de-credito.html).
