@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&family=Mochiy+Pop+P+One&family=Montserrat+Alternates:wght@300;400;500&family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/4de09098c3.js" crossorigin="anonymous"></script>
   </head>
@@ -36,7 +36,7 @@
       
       <!-- Section cards productos -->
 
-      <h1 id="saludo"></h1>
+      <h1 id="saludo">Hola 👋 Bienvenid@ a Pet Shop la mejor tienda para tú mascota 🐾</h1>
       <main class="screen_cards">
         <!-- card producto 1 -->
         <div class="cards">
@@ -44,8 +44,8 @@
             <img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642434623/consulta_dqh7vy.jpg" alt="Atencion Medica">
           </figure>
           <div class="description">
-            <h2 class="titulo">Atención Médica</h2><br>
-            <p>Chat y videollamada 24/7 de forma ilimitada y consultas a domicilio bajo criterio<br> médico y previo agendamiento.</p>
+            <h2 class="titulo">Atención Médica</h2>
+            <p>Chat y videollamada 24/7 de forma ilimitada y consultas a domicilio bajo criterio médico y previo agendamiento.</p>
             <p class="precio_titulo">Precio:</p>
             <span class="precio"><b> 60.000 $</b></span>
           </div>
@@ -58,7 +58,7 @@
             <img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642435343/alimentos_x8djx5.jpg" alt="imagen del producto">
           </figure>
           <div class="description">
-            <h2 class="titulo">Alimentos</h2><br>
+            <h2 class="titulo">Alimentos</h2>
             <p>Pensando en la alimentación de tus mascotas, acá encuentras gran variedad.</p>
             <p class="precio_titulo">Precio:</p>
             <span class="precio"> 40.000 $</span>
@@ -72,12 +72,13 @@
             <img class="img" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642435343/accesorios_ehh7ov.jpg" alt="imagen del producto">
           </figure>
           <div class="description">
-            <h2 class="titulo">Accesorios y Juguetes</h2><br>
-            <p>Pasar más tiempo con tu mascota los hará<br> muy felices a los dos. Encuentra en Pet Shop <br>una fantástica variedad de juguetes novedosos y divertidos para entretener al consentido de la casa.</p>
+            <h2 class="titulo">Accesorios y Juguetes</h2>
+            <p>Encuentra en Pet Shop una fantástica variedad de juguetes novedosos y divertidos para entretener al consentido de la casa.</p>
             <p class="precio_titulo">Precio:</p>
             <span class="precio">10.000$</span>
+            <span class="agotado">Producto no disponible</span>
           </div>
-          <button name ="btn_3" class="btn_3" id="btn_3" disabled>Comprar</button><span class="agotado">Producto no disponible</span>
+          <button name ="btn_3" class="btn_3" id="btn_3" disabled>Comprar</button>
         </div>
       </main>
       
@@ -89,8 +90,8 @@
       <img class="img" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642435343/accesorios_ehh7ov.jpg" alt="imagen del producto">
     </figure>
     <div class="description">
-      <h2 class="titulo">Accesorios y Juguetes</h2><br>
-      <p>Pasar más tiempo con tu mascota los hará<br> muy felices a los dos. Encuentra en Pet Shop <br>una fantástica variedad de juguetes novedosos y divertidos para entretener al consentido de la casa.</p>
+      <h2 class="titulo">Accesorios y Juguetes</h2>
+      <p>Encuentra en Pet Shop una fantástica variedad de juguetes novedosos y divertidos para entretener al consentido de la casa.</p>
       <p class="precio_titulo">Precio:</p>
       <span class="precio">10.000$</span>
     </div>
@@ -98,7 +99,7 @@
 
   <!--  Crear formulario para imprimir datos en la tarjeta de crédito-->
   <div class="container_creditCard">
-    <form class="creditCard " action="">
+    <form class="creditCard" action="">
       <label><input class="number" type="text" id="numberCard" placeholder="#### #### #### ####"></label>
       <label><input class="name" type="text" id="nameCard"></label>
     </form>
@@ -118,13 +119,14 @@
       <label><input type="text" id="CVV" maxlength="3" autocomplete="off" placeholder="Ingresa CVV" required></label> 
       <label><input type="text" class="dateExpire" id="monthExpire" placeholder= "Mes" maxlength="2" autocomplete="off" required></label>
       <label><input type="text" class="dateExpire" id="yearExpire" placeholder="Año" maxlength="2" autocomplete="off" required></label>
+      <h5 id="mensaje"></h5>
       <button class="pagar" id="pagar">Pagar</button>
     </form>
 
   </div>
 </div>
 
-<!--  footer-->
+      <!--  footer-->
       <footer>
         <figure>
           <img class="logoFooter" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642432139/logopng_raq7he.png" alt="Logotipo de Pet Shop">

@@ -100,9 +100,11 @@ inputNumberTc.addEventListener('keyup', (e) => {
   btnPagar.addEventListener('click', ()=>{
     console.log(validator.isValid(cardNumber))
     if(validator.isValid(cardNumber)){
-      alert('Pago satisfactorio')
+      // alert('Pago satisfactorio')
+      document.getElementById('mensaje').innerHTML = ` <b style='color:green'>Tarjeta válida! Pago procesado 👌</b><br>`
     }else{
-      alert('Lo siento su tarjeta es inválida')
+      // alert('Lo siento su tarjeta es inválida')
+      document.getElementById('mensaje').innerHTML = ` <b style='color:red'>Lo siento tarjeta Inválida! 🚨</b><br>`
     }
   })
 
