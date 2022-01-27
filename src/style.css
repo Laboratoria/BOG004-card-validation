@@ -40,7 +40,7 @@ h2{
 }
 
 .container_menu img{
-    width: 200px;
+    width: 150px;
     margin-left: 10px;
     margin-top: 10px;
 }
@@ -54,7 +54,7 @@ h2{
 }
 
 .menu li a{
-  font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
     color: black;
     padding: 10px;
@@ -91,27 +91,31 @@ h2{
 /* main */
 
 main{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    margin-top: 100px;
-    margin-bottom: 50px;
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
+
 main .cards{
-    padding: 20px;
     border-radius: 20px;
     -webkit-box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);
     box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);
-    margin: 20px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    height: 300px;
+    padding: 10px;
 }
 h1{
-  font-size: 25px;
+  font-size: 18px;
+  font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
   padding: 30px;
   background-color: #d8ddef;
@@ -123,13 +127,14 @@ h1{
 }
 
 .cards img{
-    width: 200px;
-    height: 200px;
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
 }
 
 
 .cards p{
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 400;
 }
 
@@ -137,14 +142,14 @@ h1{
     background-color: var(--btn);
     color: white;
     border-style: none;
-    padding: 20px 30px;
-    font-size: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
     border-radius: 10px;
     -webkit-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
     box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
     cursor: pointer;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 
 .cards .btn_2:hover{
@@ -157,22 +162,23 @@ h1{
 }
 
 .cards .agotado{
-  padding: 15px;
+  padding: 10px;
   color: #a31621;
   font-weight: 700;
+  font-size: 12px;
 }
 
 .precio{
     color: #009DAE;
-    font-size: 25px;
+    font-size: 16px;
     font-weight: 700;
 }
 
 p.precio_titulo{
   color: black;
   font-weight: 700;
-  font-size: 25px;
-  margin-top: 15px;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
 
@@ -184,46 +190,63 @@ p.precio_titulo{
   max-height: 100vh;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 
   
 }
 .container_form .cards{
-  width: 400px;
-  padding: 20px;
   border-radius: 20px;
   -webkit-box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);
-  box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);;
-  margin: 20px;
+  box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);
+  margin: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  height: 350px;
+  width: 300px;
+  margin-left: 150px;
+  padding: 10px;
 }
 
 .container_form img{
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
+}
+
+.container_creditCard{
+  padding: 20px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.container_creditCard input{
+  width: 50%;
 }
 .container_form .tarjetas{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .container_form .tarjeta{
-  width: 150px;
+  width: 100px;
   height: 80px;
 }
 
 .container_form .visa{
   background-color: #222c69;
   border-radius: 20px;
+  width: 80px;
+  height: 50px;
 }
 .container_form .master{
   background-color: #003664;
   border-radius: 20px;
+  width: 80px;
+  height: 50px;
 }
 
 form label{
@@ -250,70 +273,63 @@ form label{
 }
 
 .creditCard{
-  padding: 50px;
   background-image: url("https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642442817/credi-card_oh6ezf.png");
   background-repeat: no-repeat;
-  background-size: 30vw;
   background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  margin-bottom: 20px;
-
+  background-size: contain;
+  margin-bottom: 10px;
+  height: 200px;
 }
-.creditCard label{
-  margin-top: 20px;
-}
+
 .creditCard input{
-  margin-top:  100px;
+  margin-top: 110px;
+  margin-bottom: 10px;
+
 }
 input.number{
-  width: 20vw;
-  padding: 5px;
   border: none;
   background: transparent;
-  font-size:20px
+  font-size:14px;
+  margin-left: 180px;
 }
 
 input.name{
   margin-top: 0px;
-  width: 20vw;
-  padding: 5px;
   margin-bottom: 10px;
   border: none;
   background: transparent;
-  font-size:30px;
-  font-family: 'Caveat', cursive;;
+  font-size:20px;
+  font-family: 'Caveat', cursive;
+  margin-left: 180px;
   
+}
+
+.formulario{
+  height: 200px;
+  margin-top: 20px;
+  width: 50%;
 }
 
 
 .formulario input{
-  width:80%;
+  width:100%;
   border-radius: 10px;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  margin-left: 40px;
+  padding: 8px;
+  margin-bottom: 5px;
 
 }
 
 .formulario .pagar{
-  width: 80%;
-  margin-left: 40px;
+  width: 50%;
+  margin-left: 30%;
 }
 
 section{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-  width: 100%;
+  width: 60%;
 }
-
-
 
 /* footer*/
 
@@ -334,11 +350,11 @@ footer ul{
 
 footer ul li{
 padding: 15px;
-font-size: 30px;
+font-size: 20px;
 }
 
 .mail{
-  font-size: 25px;
+  font-size: 20px;
 }
 
 i{
