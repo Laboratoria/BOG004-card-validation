@@ -17,7 +17,7 @@
 ## 1. Titulo del Proyecto: 
 
 PetShop.
-<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642432139/logopng_raq7he.png" alt="Logotipo de Pet Shop" width = "200px" height ="200px">
+<img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642432139/logopng_raq7he.png" alt="Logotipo de Pet Shop" width = "200px" height ="100px">
 
 ## 2. Resumen del proyecto
 
