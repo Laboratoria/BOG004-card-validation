@@ -1,0 +1,432 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+  --menu: #83d7e0c5;
+  --btn:   #009DAE;
+  --btn_disable: #92cbd1;
+  --hover_btn: #007785;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+h2{
+    font-size: 20px;
+    color: black;
+    font-weight: 800;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+}
+
+h5{
+  text-align: center;
+  font-size: 16px;
+  margin-left: 14px;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #f2f2f2;
+}
+
+/* menu styles */
+
+.container_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--menu);
+}
+
+.container_menu img{
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.menu li{
+    list-style: none;
+    display: inline;
+    margin: 20px;
+    position: relative;
+    z-index: 3;
+}
+
+.menu li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 2px 12px -2px rgba(128, 128, 128, 0.75);
+    -moz-box-shadow: 0px 2px 12px -2px rgba(128, 128, 128, 0.75);
+    box-shadow: 0px 2px 12px -2px rgba(128, 128, 128, 0.75);
+
+}
+
+.menu li a:hover{
+    background-color:#18a4b4;
+    color: white;
+}
+
+.banner{
+    background-color: #f2f2f2;
+    height: 82px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 2;
+}
+
+.banner_img{
+    position: absolute;
+    height: 100%;
+    width: 1000px;
+}
+
+
+/* main */
+
+main{
+  width: 100%;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+main .cards{
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    padding: 10px;
+}
+h1{
+  font-size: 18px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  text-align: center;
+  padding: 30px;
+  background-color: #d8ddef;
+  border-radius: 0px 0px 20px 20px ;
+  -webkit-box-shadow: 1px 11px 6px -8px rgba(0,0,0,0.75); 
+  box-shadow: 1px 11px 6px -8px rgba(0,0,0,0.75);
+  
+  
+}
+
+.cards img{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+
+.cards p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.cards button{
+    background-color: var(--btn);
+    color: white;
+    border-style: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+.cards .btn_2:hover{
+    background-color: var(--hover_btn);
+    color: white;
+}
+
+.cards .btn_3{
+  background-color: var(--btn_disable);
+}
+
+.cards .agotado{
+  padding: 10px;
+  color: #a31621;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.precio{
+    color: #009DAE;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+p.precio_titulo{
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
+/* Form */
+
+
+.container_form{
+  max-width: 100%;
+  max-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  
+}
+.container_form .cards{
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);
+  box-shadow: 0px 2px 16px -2px rgba(0,0,0,0.75);
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 350px;
+  width: 300px;
+  margin-left: 150px;
+  padding: 10px;
+}
+
+.container_form img{
+  width: 150px;
+  height: 150px;
+}
+
+.container_creditCard{
+  padding: 20px;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.container_creditCard input{
+  width: 50%;
+}
+.container_form .tarjetas{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_form .tarjeta{
+  width: 100px;
+  height: 80px;
+}
+
+.container_form .visa{
+  background-color: #222c69;
+  border-radius: 20px;
+  width: 80px;
+  height: 50px;
+}
+.container_form .master{
+  background-color: #003664;
+  border-radius: 20px;
+  width: 80px;
+  height: 50px;
+}
+
+form label{
+  margin: 10px;
+}
+
+
+.pagar{
+  background-color: var(--btn);
+  color: white;
+  border-style: none;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 10px -3px rgba(0,0,0,0.75);
+  cursor: pointer;
+  margin-top: 20px;
+  
+}
+
+.pagar:hover{
+  background-color: var(--hover_btn);
+}
+
+.creditCard{
+  background-image: url("https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642442817/credi-card_oh6ezf.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 10px;
+  height: 200px;
+}
+
+.creditCard input{
+  margin-top: 110px;
+  margin-bottom: 10px;
+
+}
+input.number{
+  border: none;
+  background: transparent;
+  font-size:14px;
+  margin-left: 180px;
+}
+
+input.name{
+  margin-top: 0px;
+  margin-bottom: 10px;
+  border: none;
+  background: transparent;
+  font-size:20px;
+  font-family: 'Caveat', cursive;
+  margin-left: 180px;
+  
+}
+
+.formulario{
+  height: 200px;
+  margin-top: 20px;
+  width: 50%;
+}
+
+
+.formulario input{
+  width:100%;
+  border-radius: 10px;
+  padding: 8px;
+  margin-bottom: 5px;
+
+}
+
+.formulario .pagar{
+  width: 50%;
+  margin-left: 30%;
+}
+
+section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  width: 60%;
+}
+
+/* footer*/
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(209, 208, 208);
+  padding: 20px;
+  margin-top: 100px;
+  height: 15%;
+}
+
+footer ul{
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul li{
+padding: 15px;
+font-size: 20px;
+}
+
+.mail{
+  font-size: 20px;
+}
+
+i{
+  background-color: honeydew;
+  padding: 10px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 2px 12px -2px rgba(31, 31, 31, 0.75);
+  -moz-box-shadow: 0px 2px 12px -2px rgba(31, 31, 31, 0.75);
+  box-shadow: 0px 2px 12px -2px rgba(31, 31, 31, 0.75);
+  font-size: 40px;
+}
+.fa-facebook{
+  color: #1877f2;
+}
+
+.fa-instagram{
+  color: #e1306c;
+}
+
+.fa-twitter{
+  color: #1da1f2;
+}
+
+.fa-linkedin{
+  color: #0072b1;
+}
+footer ul li{
+  list-style: none;
+}
+
+.container_mail li{
+  list-style: none;
+}
+
+.container_mail a{
+  text-decoration: none;
+  color: black;
+}
+
+.container_mail span{
+  color: var(--hover_btn);
+  font-weight: 700;
+  border-bottom: 1px solid grey;
+}
+footer figure .logoFooter{
+    width: 120px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+
+/* media queries */
+
+@media (min-width:1024px) {
+  .container{
+    width: 80vw;
+    height: 100%;
+  }
+
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+
+
+}
+}
