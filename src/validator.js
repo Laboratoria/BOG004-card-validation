@@ -7,7 +7,6 @@ const validator = {
       // el split convierte un string en array y el reverse me los invierte
       array1= cardNumber.split('').map(Number).reverse();
 
-      // console.log(array1)
       let ifValid 
       // forEach para que recorra el arreglo y lo muestre en console
       array1.forEach((element, index)=>{
@@ -25,8 +24,6 @@ const validator = {
         array1[index] = parseInt(element);
         console.log(array1)
 
-
-          
         });
 
         //Suma del Array 
@@ -41,13 +38,13 @@ const validator = {
         console.log(result);
         
       // Validar tarjeta
-        if (result === 0){ifValid =  true
-          
-        }else{ ifValid = false        
+        if (result === 0){
+          ifValid =  true   
+        }else{ 
+          ifValid = false        
         }
         return ifValid;
       
-      // return(cardNumber)
     },
     
 //*****ENMASCARAMIENTO EN LA TARJETA */          
@@ -57,7 +54,6 @@ maskify: function (cardNumber){
     let lastDig=cardNumber.slice(-4)
     let masked = lastDig.padStart(longitud,"#");
     return masked;
-    // console.log(masked)
   }
 
 };
