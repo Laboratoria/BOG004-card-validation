@@ -3,75 +3,38 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Suaty instrumentos musicales</title>
+    <title>Suaty - Validador TC</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <nav class="menu">
-        <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#carrito">Carrito</a></li>
-        </ul>
-      </nav>
+      <div class="addCreditCard">
+        <p>Agregar tarjeta</p>
+      </div>
+      <img src="images/TC.jpg" class="center">
     </header>
     <main>
-      #inicio
-      #productos
-      #carrito
-      #nuevaTarjeta
-      <form action="" method="get">
-        <div>
-          <p>Agregar tarjeta de crédito</p>
-        </div>
-        <div>
+        <div class="name">
           <p>Nombre</p>
           <input type="required">
         </div>
-        <div>
+        <div class="number">
           <p>Número</p>
           <input type="required">
         </div>
-        <div>
+        <div class="date">
           <p>Fecha</p>
           <input type="required">
         </div>
-        <div>
+        <div class="ccv">
           <p>CCV</p>
           <input type="required">
         </div>
         <div>
-          <button type="submit">Agregar</>
+          <button type="submit" id="buttonAdd" class="button">Agregar</>
         </div>
-      </form>
     </main>
     <footer>
-      #contacto
-      <form action="" method="get">
-        <div>
-          <p>Contactanos</p>
-        </div>
-        <div>
-          <p>Nombre</p>
-          <input type="required">
-        </div>
-        <div>
-          <p>correo</p>
-          <input type="required">
-        </div>
-        <div>
-          <p>Telefono</p>
-          <input type="required">
-        </div>
-        <div>
-          <p>Mensaje</p>
-          <input type="required">
-        </div>
-        <div>
-          <button type="submit">Enviar</>
-        </div>
-      </form>
     </footer>
     <script src="index.js" type="module"></script>
   </body>

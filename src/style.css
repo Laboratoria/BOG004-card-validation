@@ -1,0 +1,68 @@
+.center {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 30%;
+    width: 30%;
+    object-fit: contain;
+}
+
+.addCreditCard {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+    text-align: center;
+}
+
+.name {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+    text-align: center;
+}
+
+.number {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+    text-align: center;
+}
+
+.date {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+    text-align: center;
+}
+
+.ccv {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+    text-align: center;
+}
+
+.button {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+    text-align: center;
+}
