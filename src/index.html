@@ -9,20 +9,26 @@
 
 <body background="imagenes.img/fondo.jpg">
   <div id="pag1" class="pag1">
-    <center>
+
     <img class="tittle2" src="imagenes.img/descarga.jfif" width="300" height="120">
-  </center>
 
-    <h1 font-size: 250% class="title" style="font-size:38px"> BIENVENIDOS </h1>
 
-    <h1>PET SHOP</h1>
+    <h1  class="title"> BIENVENIDOS </h1>
+
+    <h2>PET SHOP</h2>
     <div id="images" class="images">
+      <figure class="img1">
       <img src="imagenes.img/img1.jpg" width="150" height="150">
-      <button id="btnimg1"> Comprar </button>
+      <button id="btnimg1" class="btn"> Comprar </button>
+    </figure>
+    <figure class="img2">
       <img src="imagenes.img/img2.jpg" width="150" height="150">
-      <button id="btnimg2"> Comprar </button>
+      <button id="btnimg2" class="btn"> Comprar </button>
+    </figure>
+    <figure class="img3">
       <img src="imagenes.img/img3.jpg" width="150" height="150">
-      <button id="btnimg3"> Comprar </button>
+      <button id="btnimg3" class="btn"> Comprar </button>
+    </figure>
     </div>
 
   </div>
@@ -37,16 +43,17 @@
 
       <div>
         <input type="number" class="ilast" name="numbertc" id="cardNumber" placeholder="DIGITA EL NUMERO DE TU TARJETA"
-          maxlength="16">  <br>
+          maxlength="16"> <br>
         <button id="btn-ntc" class="last" type="submit">Validar</button> <br>
       </div>
+      <p id="response"> </p>
+      
     </form>
-    <p> </p>
-    <footer></footer>
+    
+    
   </div>
-
+  <footer>Gracias por visitarnos!!!</footer>
   <script src="index.js" type="module"></script>
 
 </body>
-
 </html>

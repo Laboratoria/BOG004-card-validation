@@ -17,17 +17,21 @@ const form = document.querySelector('form');     //impedir que el usuario envie 
 const name = document.getElementById('name');
 const cardNumber = document.getElementById('cardNumber');
 form.addEventListener('submit', e => {
+  e.preventDefault();
+  let response= document.getElementById("response");
+  response.innerHTML="";
   if (name.value === '' || cardNumber.value === '') {
-    alert('Por favor ingresa tu nombre y tu número de Tarjeta de Crédito');
-    e.preventDefault();
+    response.innerHTML = "Por favor ingresa tu nombre y tu número de tarjeta";
   }
   else if (validator.isValid(cardNumber.value)) {
-    alert("tu tarjeta terminada en " + validator.maskify(cardNumber.value) + " es Valida");
+    response.innerHTML = " Tu número de tarjeta terminada en " + validator.maskify(cardNumber.value) + " es valida ";
   } else {
-    alert("tu tarjeta terminada en " + validator.maskify(cardNumber.value) + " es Invalida")
+    response.innerHTML = " Tu número de tarjeta terminada en " + validator.maskify(cardNumber.value) + " es invalida "
   }
+  
+}
 
-})
+)
 
 
 
