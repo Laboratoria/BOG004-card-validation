@@ -1,0 +1,69 @@
+
+.title{
+  font-family: cursive;
+  text-align: center;
+  font-size: 250%;
+}
+
+
+
+h2{
+    text-align: center;
+    font-family: cursive;
+    font-size: 220%;
+}
+
+
+.images{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.pag2{
+text-align: center;
+display: none;
+margin: 0.5em 3em 0.5em 3em;
+padding: 2em;
+}
+
+.pag1{
+  margin: 3em 3em 3em 3em;
+  padding: 3em;
+  border: 1px solid rgb(211, 205, 187);
+  text-align: center;
+}
+
+input{
+border: 2px solid rgb(49, 185, 209);
+width: 300px;
+height: 30px; 
+
+}
+
+.last {
+  border: double black;
+  width: 100px;
+  height: 25px;
+}
+
+.img1{
+  white-space: pre;
+}
+.img2{
+  white-space: pre;
+}
+
+.img3{
+  white-space: pre;
+}
+
+footer{
+  text-align: center;
+  font-size: 220%;
+  font-weight:bold;
+}
+
+
+
+

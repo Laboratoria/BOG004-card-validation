@@ -24,23 +24,35 @@ par se les debe multiplicar por dos, si este número es mayor o igual a 10,
 debemos sumar los dígitos del resultado; el número a verificar será válido si
 la suma de sus dígitos finales es un múltiplo de 10.
 
+
 ![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
-
+# PET SHOP
 ## 2. Resumen del proyecto
+ 
+ 
 
-En este proyecto tendrás que construir una aplicación web que le permita a un
-usuario validar el número de una tarjeta de crédito. Además, tendrás que
-implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
-los últimos cuatro.
+En este proyecto construimos una pagina web donde debiamos hacer la validacion de una tarjeta de credito, ocultando los numeros a excpecion de los ultimos 4 utilizando en esta parte el algoritmo de luhn y metodos como el isValid y el maskify.
 
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
-experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
-etc.
+La temática fue una tienda de perritos asi que nos basamos en los usuarios que tienen mascota y pensando siempre en los productos mas buscados e indispensables en este caso como la comida, juguetes y premios, buscamos siempre que fuese una pagina dinamica, practica y facil al momento del usuario utilizar y querer hacer su compra.
 
-Trabajando en parejas aprenderán a construir una aplicación web que interactuará
-con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
-como tecnologías.
+trabajamos en pareja y en conjunto diseñamos esta pagina web, utilizando los prototipos y las ideas que se fueron tomando desde un principio. Aplicandolas en Java script, css y en este caso el validator.
+
+Estos fueron nuestros prototipos para el diseño de la pagina web: 
+ ![Prototipo 1](prototype1.jpg "Prototipo 1")
+ 
+
+ ![Prototipo 2](prototype2.jpg "Prototipo 2")
+
+
+ y asi nos quedo la pagina ya terminada
+
+![pagina 1](imagepp.png "pagina 1")
+![pagina 2](imagesp.png "Pagina2")
+![tarjeta valida](imagevalida.png "tarjeta valida")
+![tarjeta invalida](imageinvalida.png"tarjeta invalida")
+![Sin datos](imagenull.png "sin Datos")
+
+
 
 ## 3. Objetivos de aprendizaje
 
