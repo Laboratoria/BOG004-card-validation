@@ -1,80 +1,41 @@
-//import validator from './validator.js';
+import validator from "./validator.js";
 
-//console.log(validator);
-//Funcion para que se vean las membresias 
+//FUNCIÓN PARA QUE SE VEAN LAS OPCIONES DE LAS MEMBRESIAS
 let inicioPasteleria = document.getElementById("btn10");
-inicioPasteleria.addEventListener("click", inicioUno)
-
-
+inicioPasteleria.addEventListener("click", inicioUno);
 function inicioUno() {
-  console.log()
   document.getElementById("inicia").style.display = "none";
   document.getElementById("validación").style.display = "block";
-   }
-
-//Funcion para que se vea la validación de la tarjeta
-let validacionTarjeta= document.getElementById("btn25");
-validacionTarjeta.addEventListener("click", segundaPantalla)
-
-function segundaPantalla(){
-  document.getElementById("inicia").style.display = "none";
-  document.getElementById("validación").style.display = "block";
-} 
-
-
-   //hasta aqui todo funcionaba bien 
-
-//declarar variable 
-
- //Funcion para que los datos ingresados se guarden
-
- function obtenerNumero(){
-    const numeros= document.getElementById("numerosIngresados").value;
-  
-    const numerosSplit= numeros.split("");
-    console.log(numerosSplit);
-    const revertirNum= numerosSplit.reverse();
-  console.log(revertirNum);
-
-  let myArray= revertirNum.length;
-  console.log(myArray)
-
-//crear un array que sea vacío
-
-//For para identificar las posiciones pares 
- for(let i=0;i<revertirNum.length; i++){
-  if(i%2==0) {
-    revertirNum[i]= revertirNum[i] * 2
-    console.log("el Numero",revertirNum[i] + "en la posición", i + "es par" )
-    if(revertirNum[i] > 9) {
-      console.log(revertirNum[i])
-      revertirNum[i]= revertirNum[i] - 9
-      console.log(revertirNum[i])
-      
-    }
-  }
 }
-let sumaTotal = []
-let sumaDefinitiva = sumaTotal.push(revertirNum);
-console.log(sumaTotal)
+//FUNCIÓN PARA QUE SE VEA LA VALIDACIÓN DE TARJETA
+let validacionTarjeta = document.getElementById("btn25");
+validacionTarjeta.addEventListener("click", segundaPantalla);
+function segundaPantalla() {
+  document.getElementById("inicia").style.display = "none";
+  document.getElementById("validación").style.display = "block";
+}
 
-//const sumaFinal = sumaDefinitiva;
-const reducer = revertirNum.reduce( (accumulator, curr) => accumulator + curr, 0);//no sabemos cómo hacer que sume, con - da el resultado en negativo.
-console.log(reducer);
-const reducir = revertirNum.reduce( (accumulator, curr) => accumulator + curr, 0);
-console.log(reducir)
+//EVENTOS PARA CAPTURAR LOS DATOS
 
+// CON botonValidar TRAEMOS LOS NÚMEROS QUE ESTAN EN EL BOTÓN
+const botonValidar = document.getElementById("btnValidar");
+//LLAMAMOS A LAS FUNCIONES QUE VALIDAN LOS DATOS
+botonValidar.addEventListener("click", function () {
+let numerosTarjeta = document.getElementById("numerosIngresados").value;
+
+  if(numerosTarjeta == '') {
+    document.getElementById("resultado").innerHTML =
+      "Este campo es Obligatorio";
+  } else {
+    let validador = validator.isValid(numerosTarjeta);
+    if (validador == true) {
+      document.getElementById("resultado").innerHTML = "Tarjeta Valida";
+    } else {
+      document.getElementById("resultado").innerHTML = "Tarjeta No Valida";
+    } 
+//LLAMADA A LA FUNCION MASKIFY
+    document.getElementById("numerosIngresados").value =
+      validator.maskify(numerosTarjeta);
   }
-  
+});
 
-
-
-
-
-
-
-
-
-  const botonValidar=document.getElementById("btnValidar");
-  botonValidar.addEventListener("click",obtenerNumero);
- 
