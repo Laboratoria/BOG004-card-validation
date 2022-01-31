@@ -1,4 +1,78 @@
+body {
+  
+  background-image: url("https://x3jme3vmctf3dmlkql5tzx17-wpengine.netdna-ssl.com/wp-content/uploads/2020/10/utensilios-basicos-de-reposteria-para-negocio-de-postres-940x580.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+  background-position: center center;
+  background-attachment: fixed;
+
+}
 .ocultar {
-    display: none;
- }
+    
+   display: none;
+   background-position:relative;
+   left: 0px;
+   top: 150pt;
+   background-size: 10rem;
+   background-image: url("https://image.flaticon.com/icons/png/512/138/138287.png");
+   background-repeat: no-repeat;
+
+  }
+header {
+
+    text-align: center;
+    font-size: 30px;
+    color:  rgb(199, 54, 122);
+    margin-top: 0%;
+
+}
+.ingresa {
+   position: absolute;
+   left: 700 px;
+   top: 150pt;
+   left: 0%;
+}
+
+
+.mensaje {
+    text-align: center;
+    font-size: 50px;
+    color:  rgb(199, 54, 122);
+    margin-top: 0%;
+}
+
+p {
+
+    text-align: center;
+    font-size: 20px;
+    color: black (147, 159, 160);
+    width: 70%;
+}
+.circulo {
+
+   font-size: 25px;
+   text-align: left; 
+   font-family: monospace;
+   color:black (73, 63, 3);
  
+}
+
+h3 {
+    font-size: 25px;
+    text-align: left; 
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(228, 198, 226) (10, 63, 3);
+    border: 1px solid white;
+ 
+
+}
+
+/*ESTILO DEL BOTON*/
+.estiloBoton {
+    border: 3px solid white;
+    background-color: rgb(230, 120, 190);
+    color: white;
+    font-family: inherit;
+    font-size: 20px;
+  }
