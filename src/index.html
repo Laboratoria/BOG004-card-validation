@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta  content="width=device-width">
-    <title> Tarjeta de Credito </title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>   
-    <div id="inicia">
-    <header>            
-    <h1>Delicias Pasteleria</h1>
-    <hr>
-  </header>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width">
+  <title> Tarjeta de Credito </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
   <main>
-<p>Los mejores postres y pasteles elaborados con las recetas de los famosos Chef de Colombia y Chile</p>
+  <div id="inicia">
+    <header>
+      <h1>Delicias Pasteleria</h1>
+      <hr>
+    </header>
+    
+      <p>Los mejores postres y pasteles elaborados con las recetas de los famosos Chef de Colombia y Chile</p>
 
-<p>¡Adquiere la membresia a un precio único y comienza a disfrutar!</p>
+      <p>¡Adquiere la membresia a un precio único y comienza a disfrutar!</p>
 
-<!-- opcion 1 de membresia--> 
+      <!-- opcion 1 de membresia-->
 
-<h2 class="circulo" >Pasteles de Colombia y Chile </h2>
-<h3> MEMBRESIA 1 MES </h3>
-<button class="estiloBoton" id="btn10"> 10 $ </button> 
+      <h2 class="circulo">Pasteles de Colombia y Chile </h2>
+      <h3> MEMBRESIA 1 MES </h3>
+      <button class="estiloBoton" id="btn10"> 10 $ </button>
 
 
-<h2 class="circulo">Pasteles de Colombia y Chile</h2>
-<h3> MEMBRESIA 3 MES </h3>
-<button class="estiloBoton"  id="btn25"> 25 $ </button> 
+      <h2 class="circulo">Pasteles de Colombia y Chile</h2>
+      <h3> MEMBRESIA 3 MES </h3>
+      <button class="estiloBoton" id="btn25"> 25 $ </button>
 
-    </div>
+  </div>
 
-<!--VALIDACIÓN DE TARJETA DE CREDITO-->
-<div id="validación" class="ocultar">
-<h1 class="mensaje">Felicitaciones</h1>
-<p class="ingresa">Ingresa los datos de la tarjeta de Credito para adquirir tu membresia</p>
+  <!--VALIDACIÓN DE TARJETA DE CREDITO-->
+  <div id="validación" class="ocultar">
+    <h1 class="mensaje">Felicitaciones</h1>
+    <p class="ingresa">Ingresa los datos de la tarjeta de Credito para adquirir tu membresia</p>
 
-<!-- AQUÍ EL USUARIO INGRESA LOS NÚMEROS DE LA TARJETA-->
-<input type="text" maxlength="16"  id="numerosIngresados" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
+    <!-- AQUÍ EL USUARIO INGRESA LOS NÚMEROS DE LA TARJETA-->
+    <input type="text" maxlength="16" id="numerosIngresados"
+      onkeypress="return (event.charCode >= 48 && event.charCode <= 57)">
 
-<!-- AQUÍ EL USUARIO PRESIONA EL BOTÓN PARA VALIDAR-->
-<button  class="estiloBoton" type="button" id= "btnValidar" >VALIDAR </button>
+    <!-- AQUÍ EL USUARIO PRESIONA EL BOTÓN PARA VALIDAR-->
+    <button class="estiloBoton" type="button" id="btnValidar">VALIDAR </button>
 
-<!-- PARA QUE ARROJE EL MENSAJE SI ES VALIDA O NO LA TARJETA-->
-<p id="resultado" ></p>
+    <!-- PARA QUE ARROJE EL MENSAJE SI ES VALIDA O NO LA TARJETA-->
+    <p id="resultado"></p>
 
-<p id="campoVacio"></p>
+    <p id="campoVacio"></p>
 
-</div>
-    <script type="module" src="index.js"></script>
+  </div>
   </main>
-  </body>
+
+  <script type="module" src="index.js"></script>
+</body>
+
 </html>
