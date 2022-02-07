@@ -4,9 +4,7 @@ import validator from './validator.js';
 const btnValidar = document.getElementById('btn-pago');
 function validarTarjeta() {
   const numerosDeLaTar = document.getElementById('numero-tarjeta-input').value;
-  console.log(numerosDeLaTar)
   const resultado = validator.isValid(numerosDeLaTar)
-  console.log(resultado)
 
   if (resultado == true) { alert('La tarjeta' + validator.maskify(numerosDeLaTar) + "es válida") }
   else { alert('La tarjeta' + validator.maskify(numerosDeLaTar) + 'no es válida. Ingrese un número válido') }
@@ -24,15 +22,13 @@ function hidepagesQuienes() {
 document.getElementById('tab3').addEventListener('click', hidepagesTienda)
 
 function hidepagesTienda() {
-  
+
   document.getElementsByClassName('tab3')[0].style.display = 'block';
 }
 
 document.getElementById('tab4').addEventListener('click', hidepagesSucursales)
 
 function hidepagesSucursales() {
-  
+
   document.getElementsByClassName('tab4')[0].style.display = 'block';
 }
-
-
