@@ -1,14 +1,304 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
+
+<head>
+  <meta charset="utf-8">
+  <title>Panadería PanComido</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width">
+</head>
+
+<!--Tipografía de la barra de herramientas-->
+<div class="letra">;
+  <style type="text/css" media="screen, print">
+    @font-face {
+      font-family: "Bitstream Vera Serif Bold";
+      src: url(https://fonts.gstatic.com/s/shadowsintolight/v10/UqyNK9UOIntux_czAvDQx_ZcHqZXBNQzdcD5.woff2) format('woff2');
+    }
+
+    body {
+      font-family: "Bitstream Vera Serif Bold", serif
+    }
+
+    ;
+  </style>
+</div>
+
+<!--Elementos barra de herramientas-->
+<header>
+  <div class="menu">
+    <img id="logo" src="Imagenes/logo pancomido.png" alt="logoPanComido">
+    <nav>
+      <h1>
+        <ul class="tabs">
+          <li><a href="#tab1" id="tab1"><span>Home</span></a></li>
+          <li><a href="#tab2" id="tab2"><span>Sobre nosotros</span></a></li>
+          <li><a href="#tab3" id="tab3"><span>Tienda</span></a></li>
+          <li><a href="#tab4" id="tab4"><span>Sucursales</span></a></li>
+        </ul>
+      </h1>
+    </nav>
+  </div>
+</header>
+
+<!---->
+
+<body>
+
+  <body background="Imagenes/FONDO.png">
   </body>
+
+  <div class="sechomees">
+    <article id="home">
+      <br>
+      <div class="seccion1">
+        <img id="seccion1" src="Imagenes/IMAGEN10.jpg">
+      </div>
+      <br>
+
+      <!--Imagenes productos tienda-->
+
+      <div class="productos">
+        <img id="object-position1" src="Imagenes/IMAGEN3.jpg">
+        <img id="object-position2" src="Imagenes/IMAGEN4.jpg">
+        <img id="object-position3" src="Imagenes/IMAGEN5.jpg">
+        <img id="object-position4" src="Imagenes/IMAGEN6.jpg">
+      </div>
+      <br>
+
+      <!--Boton Tienda-->
+
+      <div class="boton">
+        <a name="tienda"></a>
+        <div class="container" style="padding-top: 100px; padding-bottom: 60px;">
+          <div class="row">
+            <div class="col-12 text-center">
+              <h1 style="margin-bottom: 30px;">¡HACEMOS PAN FRESCO Y TE LO LLEVAMOS A CASA!</h1>
+              <a class="btn enlace" href="tiendaPrincipal">
+                <span>HAZ TU PEDIDO</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+</body>
+
+
+<!--Contenido quienes somos-->
+
+<article class="tab2">
+  <div class="centrar">
+    <h2> ¡QUIENES SOMOS! </h2>
+  </div>
+
+  <div class="somos">
+    <img id="somos" src="Imagenes/IMAGEN11.jpg">
+  </div>
+
+
+  <div class="text-align-center">
+    <h2>Somos una empresa colombiana fundada en el 2014. Nos especializamos en la producción de diferentes tipos de
+      panes, postres y tortas.
+      Nuestros productos son 100% colombianos y estámos comprometidos con la agricultura sostenible. <br>
+      Tenemos presencia en cuatro ciudades del país: Bogotá, Barranquilla, Cali, y Medellín. <br>
+      Actualmente trabajamos en
+      ser reconocidos como una empresa innovadora, comprometida e incluyente con los trabajadores, los clientes y la
+      comunidad.</h2>
+  </div>
+</article>
+
+<!--Contenido tienda-->
+
+
+<article class="tab3">
+  <div class="centrar">
+    <h2> TIENDA </h2>
+  </div>
+
+  <section class="contenedortienda">
+    <div class="columna">
+      <img id="panMasa" src="Imagenes/IMAGEN3.jpg" width="300">
+      <h2>Pan de Masa Madre</h2>
+      <p class="precio">$5,000</p>
+      <a href="#" class="btn-comprar">COMPRAR</a>
+    </div>
+    <div class="columna">
+      <img id="danesa" src="Imagenes/IMAGEN4.jpg" width="300">
+      <h2>Danesa</h2>
+      <p class="precio">$5,000</p>
+      <a href="#" class="btn-comprar">COMPRAR</a>
+    </div>
+    <div class="columna">
+      <img id="croissants" src="Imagenes/IMAGEN5.jpg" width="300">
+      <h2>Croissants</h2>
+      <p class="precio">$5,000</p>
+      <a href="#" class="btn-comprar">COMPRAR</a>
+    </div>
+    <div class="columna">
+      <img id="panChocolatee" src="Imagenes/IMAGEN6.jpg" width="300">
+      <h2>Pan de Chocolate</h2>
+      <p class="precio">$5,000</p>
+      <a href="#" class="btn-comprar">COMPRAR</a>
+    </div>
+  </section>
+
+
+
+  <section class="contenedortienda">
+    <div class="columna">
+      <img id="galletaFortuna" src="Imagenes/IMAGEN7.jpg" width="300">
+      <h2>Galleta de la Fortuna</h2>
+      <p class="precio">$5,000</p>
+      <a href="#" class="btn-comprar">COMPRAR</a>
+    </div>
+    <div class="columna">
+      <img id="donuts" src="Imagenes/IMAGEN8.jpg" width="300">
+      <h2>Donuts</h2>
+      <p class="precio">$5,000</p>
+      <a href="#" class="btn-comprar">COMPRAR</a>
+    </div>
+    <div class="columna">
+      <img id="macarons" src="Imagenes\IMAGEN9.jpg" width="300">
+      <h2>Macarons</h2>
+      <p class="precio">$5,000</p>
+      <a href="#" class="btn-comprar">COMPRAR</a>
+    </div>
+    <div class="columna">
+      <img id="panChocolate" src="Imagenes\IMAGEN6.jpg" width="300">
+      <h2>Pan de Chocolate</h2>
+      <p class="precio">$5,000</p>
+      <a href="#" class="btn-comprar">COMPRAR</a>
+    </div>
+  </section>
+
+
+  <!--Tarjeta-->
+  <div class="formulario">
+
+    <form action="">
+      <div class="inputBox" id="numeroTarjeta">
+        <span>Numero de Tarjeta</span>
+        <input type="number" maxlength="16" id="numero-tarjeta-input">
+      </div>
+      <div class="inputBox" id="nombreTituar">
+        <span>Nombre del titular</span>
+        <input type="text" maxlenght="10" class="nombre-titualr-input">
+      </div>
+      <div class="flexbox">
+        <div class="inputBox">
+          <span>Expiracion mm</span>
+          <select name="" id="" class="mes-input">
+            <option value="mes" selected disabled>Mes</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+        </div>
+        <div class="inputBox">
+          <span>Año Expiracion</span>
+          <select name="" id="" class="ano-imput">
+            <option value="ano" selected disabled>Año</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+          </select>
+        </div>
+
+        <div class="inputBox">
+          <span>CVV</span>
+          <input type="number" maxlength="3" class="cvv-input">
+        </div>
+      </div>
+
+      <button type="button" class="pago-btn" id="btn-pago">Pago</button>
+
+    </form>
+  </div>
+</article>
+<!--Contenido sucursales-->
+
+<article class="tab4">
+  <div class="centrar">
+    <h2> SUCURSALES </h2>
+  </div>
+
+  <div class="box">
+
+    <div class="sucursalBogota">
+      <img id="one" src="Imagenes/sucursal2.jpg" width="400">
+      <h1>Bogota</h1>
+      <h2> Zona G <br>
+        Parque de la 93
+      </h2>
+    </div>
+
+    <div class="sucursalMedellin">
+      <img id="two" src="Imagenes/sucursal3.jpg" width="400">
+      <h1>Medellin</h1>
+      <h2> CC Santafé <br>
+        Complex Los Balsos
+      </h2>
+    </div>
+  </div>
+
+
+  <br><br><br><br><br><br><br><br>
+
+  <div class="box2">
+
+    <div class="cali">
+      <img id="sucursalCali" src="Imagenes/sucursal1.jpg" width="400">
+      <h1>Cali</h1>
+      <h2>San Antonio</h2>
+    </div>
+
+    <div class="barranquilla">
+      <img id="sucursalBarranquilla" src="Imagenes/sucursal4.jpg" width="400">
+      <h1>Barranquilla</h1>
+      <h2>Alto Prado</h2>
+    </div>
+  </div>
+  <br><br>
+
+
+
+  <!--Botón tienda-->
+
+  <div class="boton1" id="boton1">
+    <a name="tienda"></a>
+    <div class="container" style="padding-top: 100px; padding-bottom: 60px;">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1 style="margin-bottom: 30px;">¡HACEMOS PAN FRESCO Y TE LO LLEVAMOS A CASA!</h1>
+          <a class="btn enlace">
+            <span>HAZ TU PEDIDO</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+
+<script src="index.js" type="module"></script>
+
+<body>
+  <main></main>
+  <h3>
+    <footer> © Copyrigth 2022 Eva y Laura | All Rights Reserved</footer>
+  </h3>
+
+</body>
+
 </html>

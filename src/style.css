@@ -1,0 +1,277 @@
+/*barra de herramientas*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+header{
+    background-color: beige;
+    height: 90px;
+    width: 100%;
+}
+
+.menu{
+    width: 900px;
+    margin: 0 auto;
+ 
+}
+
+
+ #logo {
+    width: 120px; 
+    float: left;
+    padding: 0px;
+    
+}
+
+nav {
+    float: right;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 75px;
+    padding: 12px 0;
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+}
+
+nav ul li a::before {
+    display: block;
+    content: '';
+    width: 0%;
+    background: #e28743;
+    height: 5px;
+    top: 0;
+    position: absolute;
+}  
+nav ul li a:hover:before {
+    width: 100%;
+}    
+
+#bodybackground {
+    width:10 ;
+    height:10;
+}
+
+.productos {
+    margin-left: 120px;
+}
+
+/*Centrar titulos*/ 
+.centrar{
+    text-align: center;
+}
+
+/*Tienda*/
+.contenedortienda{
+    margin:auto;
+    display: flex;
+    text-align: center;
+}
+.columna{
+    width: auto;
+    border: 10px;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 10px;
+}
+.precio{
+    font-size: 30px;
+}
+.btn-comprar{
+    background: brown;
+    display: block;
+    padding: 10px;
+    color: burlywood;
+    border-radius: 5px;
+}
+.btn-comprar:hover{
+    background: red;
+}
+
+
+/* Boton Tienda*/ 
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
+}
+.row {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.col-12 {
+        flex: 0 0 auto;
+        width: 100%;
+       }
+.boton {
+    padding: 0 80px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.text-center {
+    text-align: center;
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.625rem 1.875rem;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+.enlace {
+    background: #c23e0a;
+    border-color: #c23e0a;
+    color: rgb(248, 246, 246);
+}
+
+/*Quienes somos*/
+
+.contenedor{
+    position: relative;
+}
+
+.text-align-center {
+    width: 1200px ;
+    
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*Imágenes sucursales*/
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    align-content: space-between;
+    margin-left: 250px;
+}
+.bogota{
+    text-align: center;
+}
+.medellin{
+    text-align: center;
+}
+
+.box2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 500px;
+    height: 400px;
+    justify-content: space-between;
+    margin-left: 250px;
+}
+.cali{
+    text-align: center;
+}
+.barranquilla{
+    text-align: center;
+}
+
+
+/* TARJETA */
+.formulario{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.formulario{
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+}
+.formulario form{
+    background: coral;
+    border-radius: 5px;
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+    padding: 20px;
+    width: 600px;
+}
+.formulario form .inputBox{
+    margin-top: 20px;
+}
+.formulario form .inputBox span{
+    display: block;
+    color: white;
+    padding-bottom: 5px;
+}
+.formulario form .inputBox input,
+.formulario form .inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: blue;
+}
+
+.formulario form .flexbox{
+    display: flex;
+    gap: 15px;
+}
+
+.formulario form .flexbox .inputBox{
+    flex: 1 1 150px;
+}
+.formulario form .pago-btn{
+    width: 100%;
+    background: linear-gradient(45deg, rgb(77, 77, 165), rgb(207, 103, 121));
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    color: cornsilk;
+    cursor: pointer;
+}
+.formulario form .pago-btn:hover{
+    letter-spacing: 2px;
+    opacity: .8px;
+}
+/*Ocultar inormación de la página principal*/
+
+.tab2,.tab3,.tab4{
+    display: none;
+}
+
+.tab1, .tab2, .tab3{
+    display: none;
+}
+
+.tab1, .tab3, .tab4{
+    display: none;
+}
+.tab1, .tab2, .tab3{
+    display: none;
+}
