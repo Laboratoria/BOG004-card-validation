@@ -34,39 +34,57 @@
           </div>
       </header>
       
-      <!-- Section cards productos -->
+        <!-- Section cards productos -->
 
-      <h1 id="saludo">Hola 👋 Bienvenid@ a Pet Shop la mejor tienda para tú mascota 🐾</h1>
+        <h1 id="saludo">Hola 👋 Bienvenid@ a Pet Shop la mejor tienda para tú mascota 🐾</h1>
       <main class="screen_cards">
-        <!-- card producto 1 -->
-        <div class="cards">
-          <figure>
-            <img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642434623/consulta_dqh7vy.jpg" alt="Atencion Medica">
-          </figure>
-          <div class="description">
-            <h2 class="titulo">Atención Médica</h2>
-            <p>Chat y videollamada 24/7 de forma ilimitada y consultas a domicilio bajo criterio médico y previo agendamiento.</p>
-            <p class="precio_titulo">Precio:</p>
-            <span class="precio"><b> 60.000 $</b></span>
+          <!-- card producto 1 -->
+          <div class="cards">
+            <figure>
+              <img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642434623/consulta_dqh7vy.jpg" alt="Atencion Medica">
+            </figure>
+            <div class="description">
+              <h2 class="titulo">Atención Médica</h2>
+              <p>Chat y videollamada 24/7 de forma ilimitada y consultas a domicilio bajo criterio médico y previo agendamiento.</p>
+              <p class="precio_titulo">Precio:</p>
+              <span class="precio"><b> 60.000 $</b></span>
+            </div>
+            <button name ="btnI" class="btnI" id="btn_1">Comprar</button>
           </div>
-          <button name ="btnI" class="btnI" id="btn_1">Comprar</button>
-        </div>
 
-        <!-- card producto 2 -->
-        <div class="cards">
-          <figure>
-            <img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642435343/alimentos_x8djx5.jpg" alt="imagen del producto">
-          </figure>
-          <div class="description">
-            <h2 class="titulo">Alimentos</h2>
-            <p>Pensando en la alimentación de tus mascotas, acá encuentras gran variedad.</p>
-            <p class="precio_titulo">Precio:</p>
-            <span class="precio"> 40.000 $</span>
+          <!-- card producto 2 -->
+          <div class="cards">
+            <figure>
+              <img src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642435343/alimentos_x8djx5.jpg" alt="imagen del producto">
+            </figure>
+            <div class="description">
+              <h2 class="titulo">Alimentos</h2>
+              <p>Pensando en la alimentación de tus mascotas, acá encuentras gran variedad.</p>
+              <p class="precio_titulo">Precio:</p>
+              <span class="precio"> 40.000 $</span>
+            </div>
+            <button id="btn_2">Comprar</button>
           </div>
-          <button id="btn_2">Comprar</button>
-        </div>
 
-        <!-- card producto 3 -->
+          <!-- card producto 3 -->
+          <div class="cards">
+            <figure>
+              <img class="img" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642435343/accesorios_ehh7ov.jpg" alt="imagen del producto">
+            </figure>
+            <div class="description">
+              <h2 class="titulo">Accesorios y Juguetes</h2>
+              <p>Encuentra en Pet Shop una fantástica variedad de juguetes novedosos y divertidos para entretener al consentido de la casa.</p>
+              <p class="precio_titulo">Precio:</p>
+              <span class="precio">10.000$</span>
+              <span class="agotado">Producto no disponible</span>
+            </div>
+            <button name ="btn_3" class="btn_3" id="btn_3" disabled>Comprar</button>
+          </div>
+      </main>
+      
+
+      <!--  Crear formulario-->
+      <div class="container_form" id="screen_form">
         <div class="cards">
           <figure>
             <img class="img" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642435343/accesorios_ehh7ov.jpg" alt="imagen del producto">
@@ -76,72 +94,54 @@
             <p>Encuentra en Pet Shop una fantástica variedad de juguetes novedosos y divertidos para entretener al consentido de la casa.</p>
             <p class="precio_titulo">Precio:</p>
             <span class="precio">10.000$</span>
-            <span class="agotado">Producto no disponible</span>
           </div>
-          <button name ="btn_3" class="btn_3" id="btn_3" disabled>Comprar</button>
         </div>
-      </main>
-      
 
-<!--  Crear formulario-->
-<div class="container_form" id="screen_form">
-  <div class="cards">
-    <figure>
-      <img class="img" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642435343/accesorios_ehh7ov.jpg" alt="imagen del producto">
-    </figure>
-    <div class="description">
-      <h2 class="titulo">Accesorios y Juguetes</h2>
-      <p>Encuentra en Pet Shop una fantástica variedad de juguetes novedosos y divertidos para entretener al consentido de la casa.</p>
-      <p class="precio_titulo">Precio:</p>
-      <span class="precio">10.000$</span>
-    </div>
-  </div>
+        <!--  Muestra los datos en la tarjeta de crédito-->
+        <div class="container_creditCard">
+          <form class="creditCard" action="">
+            <label><input class="number" type="text" id="numberCard" placeholder="#### #### #### ####"></label>
+            <label><input class="name" type="text" id="nameCard"></label>
+          </form>
 
-  <!--  Crear formulario para imprimir datos en la tarjeta de crédito-->
-  <div class="container_creditCard">
-    <form class="creditCard" action="">
-      <label><input class="number" type="text" id="numberCard" placeholder="#### #### #### ####"></label>
-      <label><input class="name" type="text" id="nameCard"></label>
-    </form>
+          <!--Imágenes de las tarjetas-->
+          <section class="tarjetas">
+              <img class="tarjeta visa" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643131903/visa_wrobj5.png
+              " alt="">
+              <img class="tarjeta master" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643131904/mastercard_fxbbza.png
+              " alt="">
+          </section>
 
-    <!--Imágenes de las tarjetas-->
-    <section class="tarjetas">
-        <img class="tarjeta visa" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643131903/visa_wrobj5.png
-        " alt="">
-        <img class="tarjeta master" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1643131904/mastercard_fxbbza.png
-        " alt="">
-    </section>
+          <!--  Crear formulario para el ingreso de datos-->
+          <form class="formulario" id="formulario">
+            <label><input type="text" id="accountCard" placeholder="Ingresa tu nombre" required></label>
+            <label><input type="text" id="numberTc" maxlength="16" autocomplete="off" placeholder="Ingresa los digitos de la tarjeta" required></label>
+            <label><input type="text" id="CVV" maxlength="3" autocomplete="off" placeholder="Ingresa CVV" required></label> 
+            <label><input type="text" class="dateExpire" id="monthExpire" placeholder= "Mes" maxlength="2" autocomplete="off" required></label>
+            <label><input type="text" class="dateExpire" id="yearExpire" placeholder="Año" maxlength="2" autocomplete="off" required></label>
+            <h5 id="mensaje"></h5>
+            <button class="pagar" id="pagar">Pagar</button>
+          </form>
 
-    <!--  Crear formulario para el ingreso de datos-->
-    <form class="formulario" id="formulario">
-      <label><input type="text" id="accountCard" placeholder="Ingresa tu nombre" required></label>
-      <label><input type="text" id="numberTc" maxlength="16" autocomplete="off" placeholder="Ingresa los digitos de la tarjeta" required></label>
-      <label><input type="text" id="CVV" maxlength="3" autocomplete="off" placeholder="Ingresa CVV" required></label> 
-      <label><input type="text" class="dateExpire" id="monthExpire" placeholder= "Mes" maxlength="2" autocomplete="off" required></label>
-      <label><input type="text" class="dateExpire" id="yearExpire" placeholder="Año" maxlength="2" autocomplete="off" required></label>
-      <h5 id="mensaje"></h5>
-      <button class="pagar" id="pagar">Pagar</button>
-    </form>
-
-  </div>
-</div>
+        </div>
+      </div>
 
       <!--  footer-->
       <footer>
-        <figure>
-          <img class="logoFooter" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642432139/logopng_raq7he.png" alt="Logotipo de Pet Shop">
-        </figure>
+          <figure>
+            <img class="logoFooter" src="https://res.cloudinary.com/dtaq1ip2g/image/upload/v1642432139/logopng_raq7he.png" alt="Logotipo de Pet Shop">
+          </figure>
 
-        <ul>
-          <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> </a></li>
-        </ul>
-        <div class="container_mail">
-          <li><a href="https://mail.google.com" class="mail" target="_blank" rel="noopener noreferrer"><span>Contáctanos</span><br>mailto:mascotas.petshop@email.com</a></li>
-        </div>
-        
+          <ul>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i> </a></li>
+          </ul>
+          <div class="container_mail">
+            <li><a href="https://mail.google.com" class="mail" target="_blank" rel="noopener noreferrer"><span>Contáctanos</span><br>mailto:mascotas.petshop@email.com</a></li>
+          </div>
+          
       </footer>
     </div>
     <script src="index.js" type="module"></script>

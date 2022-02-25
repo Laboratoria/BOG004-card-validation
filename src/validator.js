@@ -1,42 +1,27 @@
 const validator = {
   
-  isValid: function (cardNumber){
-    let array1 = []
-
-      // save to array en Variable Global.
-      // el split convierte un string en array y el reverse me los invierte
-      array1= cardNumber.split('').map(Number).reverse();
-
-      let ifValid 
-      // forEach para que recorra el arreglo y lo muestre en console
-      array1.forEach((element, index)=>{
-
+isValid: function (cardNumber){
+    let arrayCardNumber = []     
+      arrayCardNumber= cardNumber.split('').map(Number).reverse();  // el split convierte un string en array y el reverse me los invierte
+      let ifValid;
+      // forEach para que recorra el arreglo.
+      arrayCardNumber.forEach((element, index)=>{
         if(index % 2 == 1){
           element = element * 2
         }
-
         if(element >= 10){
           element = element.toString().split('');
           element = parseInt(element[0]) + parseInt(element[1]);
-        }
-        
-        //bajar los elementos sumados posicionar numeros
-        array1[index] = parseInt(element);
-        console.log(array1)
-
+        }      
+        arrayCardNumber[index] = parseInt(element); //bajar los elementos sumados posicionar numeros
         });
-
-        //Suma del Array 
-        let sum = 0;
-        array1.forEach((element)=>{
+        
+        let sum = 0; //Suma del Array 
+        arrayCardNumber.forEach((element)=>{
           sum += element
-        })
-        console.log(sum)
-        
-        //Modulo de la suma
-        let result = sum % 10;
-        console.log(result);
-        
+        })     
+        let result = sum % 10; //Modulo de la suma
+                
       // Validar tarjeta
         if (result === 0){
           ifValid =  true   
